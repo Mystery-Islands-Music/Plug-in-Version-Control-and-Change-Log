@@ -1,475 +1,475 @@
 Version 1.5.14 / 2018-11-07
 
-[Fixed] Saving TI bank as MIDI file is now recognized in the Access Virus TI Control Software.
-[Fixed] Resolved issue where VirusHC would crash if Virus TI was booted with Virus TI USB connected to computer.
+* [Fixed] Saving TI bank as MIDI file is now recognized in the Access Virus TI Control Software.
+* [Fixed] Resolved issue where VirusHC would crash if Virus TI was booted with Virus TI USB connected to computer.
 
 
 Version 1.5.13 / 2018-11-03
 
-[Fixed] Resolved issue where patch bank storing to HDD made the bank incompatible with Virus TI models.
-[Other] Improved patch / multi file handling system.
+* [Fixed] Resolved issue where patch bank storing to HDD made the bank incompatible with Virus TI models.
+* [Other] Improved patch / multi file handling system.
 
 
 Version 1.5.12 / 2018-10-30
 
-[Fixed] Resolved issue where patch category did not update in the plug-in display accordingly after changing preset in patch librarian or via hardware.
+* [Fixed] Resolved issue where patch category did not update in the plug-in display accordingly after changing preset in patch librarian or via hardware.
 
 
 Version 1.5.11 / 2018-10-26
 
-[Fixed] Resolved issue where 32-bit installers did not work as expected.
-[Other] Changed “Send all MIDI data from Plug-in:” to “Directly to Hardware” by default, since some users with large buffer settings were not able to get notes triggered at all.
+* [Fixed] Resolved issue where 32-bit installers did not work as expected.
+* [Other] Changed “Send all MIDI data from Plug-in:” to “Directly to Hardware” by default, since some users with large buffer settings were not able to get notes triggered at all.
 
 
 Version 1.5.10 / 2018-10-16
 
-[Fixed] Resolved issue where TI multi parameters were not recalled properly.
-[Fixed] Resolved issue where TI effect parameters were not recalled properly. (works now after requesting data from hardware to plug-in. Old data is recalled like it used to be).
-[Fixed] Resolved issue where TI data was not decoded properly depending of the TIOS installed in Virus hardware.
-[Fixed] Resolved issue where single patches were not written to hardware memory (rephrase).
+* [Fixed] Resolved issue where TI multi parameters were not recalled properly.
+* [Fixed] Resolved issue where TI effect parameters were not recalled properly. (works now after requesting data from hardware to plug-in. Old data is recalled like it used to be).
+* [Fixed] Resolved issue where TI data was not decoded properly depending of the TIOS installed in Virus hardware.
+* [Fixed] Resolved issue where single patches were not written to hardware memory (rephrase).
 
 
 Version 1.5.9 / 2018-09-24
 
-[Fixed] Resolved issue where plug-in caused noise on start-up.
-[Fixed] Resolved issue where plug-in scanned files and moved “incompatible” files to “Converted Banks” folder. Users are advised to check out “Converted Banks” folder and move any files back to original folder to re-scan them.
-[Fixed] Users banks which contains less than 128 presets are visible again in the Patch Librarian.
-[Fixed] Resolved issue where non-TI or classic model patches did not update the TI effects settings accordingly.
-[Fixed] Resolved issue where users were not able to adjust parameters on first attempt.
+* [Fixed] Resolved issue where plug-in caused noise on start-up.
+* [Fixed] Resolved issue where plug-in scanned files and moved “incompatible” files to “Converted Banks” folder. Users are advised to check out “Converted Banks” folder and move any files back to original folder to re-scan them.
+* [Fixed] Users banks which contains less than 128 presets are visible again in the Patch Librarian.
+* [Fixed] Resolved issue where non-TI or classic model patches did not update the TI effects settings accordingly.
+* [Fixed] Resolved issue where users were not able to adjust parameters on first attempt.
 
 
 Version 1.5.8 / 2018-09-18
 
-[Fixed] Resolved issue with Virus TI where delay parameters did not update the plug-in UI when changing patches.
-[Fixed] Resolved issue where delay parameters were not recalled properly when opening a project.
-[New] If part is set to Muted, it won’t be recalled to, or requested from hardware by the plug-in. This saves some time when recalling a project and when synchronizing data from hardware to plug-in UI. For example, 16 part total recall with Virus TI using 600ms request interval takes ~13 seconds to send the data to Virus, but if only parts 1-3 are enabled and 4-16 muted, it takes ~4 seconds. Time is money!
+* [Fixed] Resolved issue with Virus TI where delay parameters did not update the plug-in UI when changing patches.
+* [Fixed] Resolved issue where delay parameters were not recalled properly when opening a project.
+* [New] If part is set to Muted, it won’t be recalled to, or requested from hardware by the plug-in. This saves some time when recalling a project and when synchronizing data from hardware to plug-in UI. For example, 16 part total recall with Virus TI using 600ms request interval takes ~13 seconds to send the data to Virus, but if only parts 1-3 are enabled and 4-16 muted, it takes ~4 seconds. Time is money!
 
 
 Version 1.5.7 / 2018-09-18
 
-[Fixed] Resolved issue where Master Delay/Reverb Part was messed up when changing value from hardware. Now if master FX part is set to 1 from plug-in, Send Level will be assigned to appropriate part, everything else will change the master FX part values. (pre-TI).
-[Fixed] Resolved issue where Mod wheel and Sustain data was not passed hardware.
-[Fixed] Resolved issue where Local Control selection did not work as expected.
+* [Fixed] Resolved issue where Master Delay/Reverb Part was messed up when changing value from hardware. Now if master FX part is set to 1 from plug-in, Send Level will be assigned to appropriate part, everything else will change the master FX part values. (pre-TI).
+* [Fixed] Resolved issue where Mod wheel and Sustain data was not passed hardware.
+* [Fixed] Resolved issue where Local Control selection did not work as expected.
 
 
 Version 1.5.6 / 2018-09-15
 
-[Fixed] Resolved issue where Pitch, Aftertouch and other controls were not passed through the plug-in.
-[Improvement] Made some minor core changes to make the MIDI stream work a bit more light weight.
+* [Fixed] Resolved issue where Pitch, Aftertouch and other controls were not passed through the plug-in.
+* [Improvement] Made some minor core changes to make the MIDI stream work a bit more light weight.
 
 
 Version 1.5.5 / 2018-09-15
 
-[New] Added experimental MIDI clock generator AND advanced MIDI filtering options to VirusHC plug-in. Advanced MIDI settings can be accessed from Multi Mode & Patch Browser tabs. Button appears right above our logo in the bottom right corner.
-[Fixed] Resolved issue where FX was not recalled properly on pre-TI models after project was opened.
-[Fixed] Tempo data should now synchronize with Virus on project recall and while initializing plug-in.
-[Fixed] Resolved issue where DAW would crash when resetting all notes.
-[Fixed] Adjusted some MIDI out detection booleans to make sure MIDI connection is alive.
+* [New] Added experimental MIDI clock generator AND advanced MIDI filtering options to VirusHC plug-in. Advanced MIDI settings can be accessed from Multi Mode & Patch Browser tabs. Button appears right above our logo in the bottom right corner.
+* [Fixed] Resolved issue where FX was not recalled properly on pre-TI models after project was opened.
+* [Fixed] Tempo data should now synchronize with Virus on project recall and while initializing plug-in.
+* [Fixed] Resolved issue where DAW would crash when resetting all notes.
+* [Fixed] Adjusted some MIDI out detection booleans to make sure MIDI connection is alive.
 
 
 Version 1.5.4 / 2018-08-26
 
-[Fixed] Resolved issue where plug-in would occasionally crash the DAW when clicking on MULTI SETTINGS button.
-[Improvement] Bank Drop Down menus are now sorted so that folders come up first and then Patches root files. Multilevel subfolders supported.
-[Improvement] Master FX display notification moved to a different spot on the plug-in UI.
-[Improvement] Adjusted Patch Request and Send timings. Use Request Interval dropdown menu to increase the request interval if you experience missing data on either way.
+* [Fixed] Resolved issue where plug-in would occasionally crash the DAW when clicking on MULTI SETTINGS button.
+* [Improvement] Bank Drop Down menus are now sorted so that folders come up first and then Patches root files. Multilevel subfolders supported.
+* [Improvement] Master FX display notification moved to a different spot on the plug-in UI.
+* [Improvement] Adjusted Patch Request and Send timings. Use Request Interval dropdown menu to increase the request interval if you experience missing data on either way.
 
 
 Version 1.5.1 / 2018-02-27
 
-[Fixed] Time-out issues should be resolved. In some cases, even though the cables and midi interface was ok, plug-in indicated that it was not able to make the connection.
-[Fixed] Semitone should behave as expected when knob is moved from hardware.
-[New] Randomizer – You can now freely randomize any part you wish.
-[New] Section Locks – Compine together with Randomizer and you can keep some of the best settings of the randomized or even the current preset. If section locks are toggle on, patches sent from librarian will have your parts locked in place.
-[New] Better UI – We made some small adjustment to the user interface. We know there are a lot people asking for a bigger User interface, but at this time and due the last update issues, we were not able to ship it with this release.
-[New] MIDI / SysEx state LEDs per part – Now you can see per part which part is receiving data.
-[New] Librarian menu improvement – You can now toggle + or – to choose next or previous bank from the dropdown list, without having to open the menu.
-[New] Librarian Bank Edit Menu – revised to keep multi data and single data requests on their segments. Multi bank menu actions can be seen when Single Patches / Multi Bank Files button is toggled.
-[New] Limit bank view by categories – We made our own way to display all categories in the dropdown menu. Check it out!
+* [Fixed] Time-out issues should be resolved. In some cases, even though the cables and midi interface was ok, plug-in indicated that it was not able to make the connection.
+* [Fixed] Semitone should behave as expected when knob is moved from hardware.
+* [New] Randomizer – You can now freely randomize any part you wish.
+* [New] Section Locks – Compine together with Randomizer and you can keep some of the best settings of the randomized or even the current preset. If section locks are toggle on, patches sent from librarian will have your parts locked in place.
+* [New] Better UI – We made some small adjustment to the user interface. We know there are a lot people asking for a bigger User interface, but at this time and due the last update issues, we were not able to ship it with this release.
+* [New] MIDI / SysEx state LEDs per part – Now you can see per part which part is receiving data.
+* [New] Librarian menu improvement – You can now toggle + or – to choose next or previous bank from the dropdown list, without having to open the menu.
+* [New] Librarian Bank Edit Menu – revised to keep multi data and single data requests on their segments. Multi bank menu actions can be seen when Single Patches / Multi Bank Files button is toggled.
+* [New] Limit bank view by categories – We made our own way to display all categories in the dropdown menu. Check it out!
 
 
 Version 1.5.0 / 2017-11-04
 
-[Fixed] Windows 64bit plug-in is not actually 64bit plug-in. NOTE: not backward compatible!
+* [Fixed] Windows 64bit plug-in is not actually 64bit plug-in. NOTE: not backward compatible!
 
 
 Version 1.4.13 / 2017-03-28
 
-[Fixed] Save or Save As MIDI files are now compatible with Virus TI Control Software and sequencer applications capable of playing back MIDI files containing patches.
-[Fixed] Save As does not randomly pick patches to newly saved bank.
-[Fixed] In some cases, Virus Rack and Rack XL master volume was set to 0 when recalling a project.
-[Fixed] Multi FX recall when recalling a project.
-[Fixed] Some parameters were completely messed up when knobs / menu items were changed by Virus TI.
-[Fixed] Reverb Mode now changes accordingly in Virus TI.
-[Fixed] Delay send levels were set to 0 when recalling project with Virus TI.
-[Fixed] Smooth Mode list did not include all the items when Virus TI was selected as current model.
-[Fixed] Rotary Speaker Mode now displays speaker distance as it is shown in the Virus TI hardware.
-[Fixed] If chorus mode was Hyper Chorus, Air Chorus or Vibrato, knobs did not visually move in the plug-in UI while moving the knob on the hardware.
-[Fixed] If delay mode was Tap Delay, knobs were displayed wrong in the plug-in UI.
-[Fixed] Reverb Damping now shows 0% – 100% like shown in the Virus TI hardware.
-[Fixed] Plug-in UI did not update accordingly when changing Reverb Mode from the Virus TI.
-[Fixed] Assignment destinations in Modulation slots 4/5/6 did not show number for the first slot.
-[New/Fixed] Multimode Mixer Settings window has been changed so that you can choose MASTER part for multi delay/reverb (pre-ti users). If user sets part 1 as a master, patches changed at part 1 will also change the delay/reverb setting to multi/all patches accordingly. All other parts will indicate that part 1 is master and only effect send knob is available for adjustment. Master part can be changed at any time in multimode mixer settings page to hear if another parts fx is more suitable.
-[New] Librarian now includes ‘Cancel’ button, to cancel current request of arrangement, single or multi patches from hardware.
-[New] Finetuned plug-in framework to set request interval in 500ms with Pre-TI models and 1000ms for TI models. This is due to message size the hardware sends / receives.
-[New] Virus TI Snow added to model list and this ensures that right amount of patch data is requested when arrangement is called and some UI elements are temporarely grayed out to prevent touching un-needed parts. These elements will be re-drawn for v2 release in future.
-[New] Master Volume knob added for Rack and Rack XL users to the multimode mixer.
-[Announcement] v2.0.0 UI re-design has been started. New user interface size will be 1500px wide and 757px height.
-[Additional] User manual has been re-written, finally!
+* [Fixed] Save or Save As MIDI files are now compatible with Virus TI Control Software and sequencer applications capable of playing back MIDI files containing patches.
+* [Fixed] Save As does not randomly pick patches to newly saved bank.
+* [Fixed] In some cases, Virus Rack and Rack XL master volume was set to 0 when recalling a project.
+* [Fixed] Multi FX recall when recalling a project.
+* [Fixed] Some parameters were completely messed up when knobs / menu items were changed by Virus TI.
+* [Fixed] Reverb Mode now changes accordingly in Virus TI.
+* [Fixed] Delay send levels were set to 0 when recalling project with Virus TI.
+* [Fixed] Smooth Mode list did not include all the items when Virus TI was selected as current model.
+* [Fixed] Rotary Speaker Mode now displays speaker distance as it is shown in the Virus TI hardware.
+* [Fixed] If chorus mode was Hyper Chorus, Air Chorus or Vibrato, knobs did not visually move in the plug-in UI while moving the knob on the hardware.
+* [Fixed] If delay mode was Tap Delay, knobs were displayed wrong in the plug-in UI.
+* [Fixed] Reverb Damping now shows 0% – 100% like shown in the Virus TI hardware.
+* [Fixed] Plug-in UI did not update accordingly when changing Reverb Mode from the Virus TI.
+* [Fixed] Assignment destinations in Modulation slots 4/5/6 did not show number for the first slot.
+* [New/Fixed] Multimode Mixer Settings window has been changed so that you can choose MASTER part for multi delay/reverb (pre-ti users). If user sets part 1 as a master, patches changed at part 1 will also change the delay/reverb setting to multi/all patches accordingly. All other parts will indicate that part 1 is master and only effect send knob is available for adjustment. Master part can be changed at any time in multimode mixer settings page to hear if another parts fx is more suitable.
+* [New] Librarian now includes ‘Cancel’ button, to cancel current request of arrangement, single or multi patches from hardware.
+* [New] Finetuned plug-in framework to set request interval in 500ms with Pre-TI models and 1000ms for TI models. This is due to message size the hardware sends / receives.
+* [New] Virus TI Snow added to model list and this ensures that right amount of patch data is requested when arrangement is called and some UI elements are temporarely grayed out to prevent touching un-needed parts. These elements will be re-drawn for v2 release in future.
+* [New] Master Volume knob added for Rack and Rack XL users to the multimode mixer.
+* [Announcement] v2.0.0 UI re-design has been started. New user interface size will be 1500px wide and 757px height.
+* [Additional] User manual has been re-written, finally!
 
 
 Version 1.4.12 / included in next release
 
-[Fixed] Save As.. issues with librarian.
+* [Fixed] Save As.. issues with librarian.
 
 
 Version 1.4.11 / 2017-02-20
 
-[Fixed] Plug-in no longer passes double notes to hardware if notes are played from Virus keyboard models.
-[Fixed] Mod Wheel was recognized as Foot Controller instead of Mod Wheel.
-[Fixed] If Local Control was on for Virus Keyboard models, MIDI data was not passed back to Virus.
-[Fixed] If MIDI destination was set to MIDI only, MIDI data was not passed back to Virus.
-[Fixed] Mod Wheel and other controls which you can choose from Mod Source, were not passed over to Virus like they should have been.
-[Fixed] In some dropdown lists, RING MODULATOR was written RONG MODULATOR.
-[Update] Added more delay between arrange request to prevent “stuck at 95%” issue.
+* [Fixed] Plug-in no longer passes double notes to hardware if notes are played from Virus keyboard models.
+* [Fixed] Mod Wheel was recognized as Foot Controller instead of Mod Wheel.
+* [Fixed] If Local Control was on for Virus Keyboard models, MIDI data was not passed back to Virus.
+* [Fixed] If MIDI destination was set to MIDI only, MIDI data was not passed back to Virus.
+* [Fixed] Mod Wheel and other controls which you can choose from Mod Source, were not passed over to Virus like they should have been.
+* [Fixed] In some dropdown lists, RING MODULATOR was written RONG MODULATOR.
+* [Update] Added more delay between arrange request to prevent “stuck at 95%” issue.
 
 
 Version 1.4.10 / 2016-12-09
 
-[Fixed] Installers now install without errors in the scripts.
-[Fixed] Changed patches folder detection inside the plug-in.
+* [Fixed] Installers now install without errors in the scripts.
+* [Fixed] Changed patches folder detection inside the plug-in.
 
 
 Version 1.4.9 / 2016-12-04
 
-[New] VST is now being installed to c:\program files\steinberg\vstplugins\virushc editor\ by default.
-[New] Windows data is now located in Documents\Mystery Islands Music\Access VirusHC Editor\. Copy your previous patches to new patches folder and license.key as well.
-[New] Mac data is now located in Documents/Mystery Islands Music/Access VirusHC Editor/. Copy your previous patches to new patches folder and license.key as well.
-[Fixed] Folders were not created properly for MAC installers.
-[Fixed] Fonts were overlapping menu items in plug-in user interface.
-[Fixed] If patches were not present / patch data folder was not found, plug-in caused a crash.
-[Update] Now patch / multi files which has long name are shortened only for the bank name display area. No need to shorten the bank names anymore.
-[Update] Logging is even deeper when activated.
+* [New] VST is now being installed to c:\program files\steinberg\vstplugins\virushc editor\ by default.
+* [New] Windows data is now located in Documents\Mystery Islands Music\Access VirusHC Editor\. Copy your previous patches to new patches folder and license.key as well.
+* [New] Mac data is now located in Documents/Mystery Islands Music/Access VirusHC Editor/. Copy your previous patches to new patches folder and license.key as well.
+* [Fixed] Folders were not created properly for MAC installers.
+* [Fixed] Fonts were overlapping menu items in plug-in user interface.
+* [Fixed] If patches were not present / patch data folder was not found, plug-in caused a crash.
+* [Update] Now patch / multi files which has long name are shortened only for the bank name display area. No need to shorten the bank names anymore.
+* [Update] Logging is even deeper when activated.
 
 
 Version 1.4.8 / 2016-12-01
 
-[New] Librarian overlay has been revamped and simplified.
-[New] If data was requested from hardware to librarian or to User Interface.
-[New] Virus|HC logo has been updated along with company logo.
-[New] New dropdown menu included in librarian to handle all the data traffic.
-[New] Added option to LOG plugin loading process to debug if there occurs failures. To activate debugging option, simply add a blank text file named ”VirusHC Editor LOG.txt” to plugin DATA folder and relaunch DAW. User can then send over the LOG file to our support team to resolve any issues occuring.
-[Fixed] Plug-in now detects tempo change from host and syncs automatically to host sync if the option is enabled in Settings #2 tab. Default position is on.
-[Fixed] In some cases, filter link was not activated in plug-in interface although it was activated on patch while loading from librarian.
-[Fixed] Arp was not recalled after project was reloaded in some cases.
-[Fixed] When chorus was set to Rotary Speaker, Speed menu was not shown in UI and the data was recalled wrong on project recall.
-[Fixed] Data was not handled properly when receiving MULTI information from hardware.
-[Fixed] Data was not handled properly when receiving SINGLE information from hardware.
-[Fixed] Hardware value for ”MIDI DUMP RX” was changed to ”ForceToEditBuffer” when project was recalled or when data was forced to device.
-[Update] Program Change and Override Multi Settings are now enabled by default on Settings #2 tab.
-[Update] Decreased memory usage by up to 50%.
-[Update] Un-registered product can now be registered from the librarian bank edit menu.
+* [New] Librarian overlay has been revamped and simplified.
+* [New] If data was requested from hardware to librarian or to User Interface.
+* [New] Virus|HC logo has been updated along with company logo.
+* [New] New dropdown menu included in librarian to handle all the data traffic.
+* [New] Added option to LOG plugin loading process to debug if there occurs failures. To activate debugging option, simply add a blank text file named ”VirusHC Editor LOG.txt” to plugin DATA folder and relaunch DAW. User can then send over the LOG file to our support team to resolve any issues occuring.
+* [Fixed] Plug-in now detects tempo change from host and syncs automatically to host sync if the option is enabled in Settings #2 tab. Default position is on.
+* [Fixed] In some cases, filter link was not activated in plug-in interface although it was activated on patch while loading from librarian.
+* [Fixed] Arp was not recalled after project was reloaded in some cases.
+* [Fixed] When chorus was set to Rotary Speaker, Speed menu was not shown in UI and the data was recalled wrong on project recall.
+* [Fixed] Data was not handled properly when receiving MULTI information from hardware.
+* [Fixed] Data was not handled properly when receiving SINGLE information from hardware.
+* [Fixed] Hardware value for ”MIDI DUMP RX” was changed to ”ForceToEditBuffer” when project was recalled or when data was forced to device.
+* [Update] Program Change and Override Multi Settings are now enabled by default on Settings #2 tab.
+* [Update] Decreased memory usage by up to 50%.
+* [Update] Un-registered product can now be registered from the librarian bank edit menu.
 
 
 Version 1.4.7 / 2016-05-16
 
-[Fixed] MIDI I/O State was not properly recalled after re-opening the project if the count of MIDI Devices was changed. Now MIDI Devices are recalled by the device name, rather than saved index number. This ensures that if you unhook aMIDI device from your Computer, devices are assigned to approperiate port up on project recall.
-[Fixed] Digital Performer crashed up on clicking save as in librarian.
-[New] Patch menus are now displaying subfolders if there are patches in subfolders. In 32-bit systems, patch names are automatically shortened to 32 characters and in 64-bit systems, patch names are shortened to 52 characters. If name is longer, it won’t fit to the patch name display which caused crash.
-[New] Patches can now be saved in either MIDI or System Exclusive format when clicking save as from librarian menu.
+* [Fixed] MIDI I/O State was not properly recalled after re-opening the project if the count of MIDI Devices was changed. Now MIDI Devices are recalled by the device name, rather than saved index number. This ensures that if you unhook aMIDI device from your Computer, devices are assigned to approperiate port up on project recall.
+* [Fixed] Digital Performer crashed up on clicking save as in librarian.
+* [New] Patch menus are now displaying subfolders if there are patches in subfolders. In 32-bit systems, patch names are automatically shortened to 32 characters and in 64-bit systems, patch names are shortened to 52 characters. If name is longer, it won’t fit to the patch name display which caused crash.
+* [New] Patches can now be saved in either MIDI or System Exclusive format when clicking save as from librarian menu.
 
 
 Version 1.4.5 / 2016-04-26
 
-[Important!] When data is sent to hardware, we force legacy Virus to MULTI mode in order to receive multi settings properly. This is why we HIGHLY recommend all users to use Virus in MULTI mode while working with the plugin. If MULTI SINGLE / SINGLE mode is used, none of the multimode mixer settings are received up on project recall or if ”force to device” button is pressed. So one more time: ALWAYS STICK IN THE MULTI MODE. You can change & scroll through patches in multi single mode, but must return to multi mode if you recall your project.
-[Fixed] Fixed major issue with Total Recall function, where sounds in other than part 1 were sounding completely different after re-opening the project.
-[Fixed] When project was recalled, some sysex messages were sent out with wrong DeviceID information leading to situation with no sound.
-[Fixed] Resolved error with RingMod level knob on new TIOS platforms.
-[New] This addemdum included in the package.
+* [Important!] When data is sent to hardware, we force legacy Virus to MULTI mode in order to receive multi settings properly. This is why we HIGHLY recommend all users to use Virus in MULTI mode while working with the plugin. If MULTI SINGLE / SINGLE mode is used, none of the multimode mixer settings are received up on project recall or if ”force to device” button is pressed. So one more time: ALWAYS STICK IN THE MULTI MODE. You can change & scroll through patches in multi single mode, but must return to multi mode if you recall your project.
+* [Fixed] Fixed major issue with Total Recall function, where sounds in other than part 1 were sounding completely different after re-opening the project.
+* [Fixed] When project was recalled, some sysex messages were sent out with wrong DeviceID information leading to situation with no sound.
+* [Fixed] Resolved error with RingMod level knob on new TIOS platforms.
+* [New] This addemdum included in the package.
 
 
 Version 1.4.4 / 2016-04-25
 
-[New] Arrow keys now supported in Librarian window to scroll up, down, left & right in the patch window. This function does not work anywhere else but in the librarian window while the cursor is above the patch-names window.
-[Update] Updated ”please wait….” window to transparent layer with Loading text to avoid annoying flickering while scrolling between patches.
-[Update] Installers split in to two groups, 32 and 64 bit installers to avoid bridge conflicts in DAWs.
-[Update] Pathces folder permissions changed to 777 in MAC ( machd/library/application support/mystery islands music/virushc editor/patches ) since the folder was unwritable by user in OSX 10.10 and up.
-[Update] SysEx data is now being sent & received with new intervals due to some reports of patch data not being collected properly to our librarian. In Virus TI, each patch request is processed after 1000ms and in legacy models the requestinterval is 800ms.
-[Core] Other minor coding tweaks and cleanups.
+* [New] Arrow keys now supported in Librarian window to scroll up, down, left & right in the patch window. This function does not work anywhere else but in the librarian window while the cursor is above the patch-names window.
+* [Update] Updated ”please wait….” window to transparent layer with Loading text to avoid annoying flickering while scrolling between patches.
+* [Update] Installers split in to two groups, 32 and 64 bit installers to avoid bridge conflicts in DAWs.
+* [Update] Pathces folder permissions changed to 777 in MAC ( machd/library/application support/mystery islands music/virushc editor/patches ) since the folder was unwritable by user in OSX 10.10 and up.
+* [Update] SysEx data is now being sent & received with new intervals due to some reports of patch data not being collected properly to our librarian. In Virus TI, each patch request is processed after 1000ms and in legacy models the requestinterval is 800ms.
+* [Core] Other minor coding tweaks and cleanups.
 
 
 Version 1.4.3 / 2016-02-27
 
-[Fixed] Plugin sends wrong tempo information up on project recall.
-[Fixed] All patches worked when browsed through librarian, but lost their sound after project recall.
-[Fixed] Control Link between Filter Envelope Velocity depth didn’t work.
-[Fixed] Control Link between Filter Resonance Velocity depth didn’t work.
-[Fixed] Tempo data was recognized only from part 1.
-[Update] MIDI data handling has been improved and CPU does not peak up on control change / program change.
-[Update] Manual has been “re-written” and added a lot more details to non-Virus parameters of the plugin.
+* [Fixed] Plugin sends wrong tempo information up on project recall.
+* [Fixed] All patches worked when browsed through librarian, but lost their sound after project recall.
+* [Fixed] Control Link between Filter Envelope Velocity depth didn’t work.
+* [Fixed] Control Link between Filter Resonance Velocity depth didn’t work.
+* [Fixed] Tempo data was recognized only from part 1.
+* [Update] MIDI data handling has been improved and CPU does not peak up on control change / program change.
+* [Update] Manual has been “re-written” and added a lot more details to non-Virus parameters of the plugin.
 
 
 Version 1.4.1 / 2015-11-17
 
-[Fixed] While using Virus TI and legacy patches, arp was not set on after recalling the project.
+* [Fixed] While using Virus TI and legacy patches, arp was not set on after recalling the project.
 
 
 Version 1.4.0 / 2015-11-06
 
-[New] User Arp Editor is available for Virus TI and Virus TI Snow users.
-[Fixed] Modulation and pitch bender did not pass through the plugin.
-[Update] Fixed a lot librarian related issues (too many to mention here, but everything should work now).
-[Update-AU] Automation can be recorded while moving knobs from the hardware (VST fix coming soon).
-[Update-ALL] Automation can be recorded while moving knobs from the software (All formants).
+* [New] User Arp Editor is available for Virus TI and Virus TI Snow users.
+* [Fixed] Modulation and pitch bender did not pass through the plugin.
+* [Update] Fixed a lot librarian related issues (too many to mention here, but everything should work now).
+* [Update-AU] Automation can be recorded while moving knobs from the hardware (VST fix coming soon).
+* [Update-ALL] Automation can be recorded while moving knobs from the software (All formants).
 
 
 Version 1.3.6 / 2015-08-07
 
-[New] Added option to save single patches from plugin part to librarian.
-[Fixed] Arp was set to off on VirusTI under certain circumstances.
-[Update] Outgoing SysEx chunk changed up on plugin load. Data now matches the model selected on “multi settings” tab.
-[Update] Depth & contrast added to the “selected model” color.
-[Fixed] Resolved an issue, where banks were not readable by the plugin if hardware Device ID was bigger than 0.
-[Fixed] Resolved an issue, where plugin graphics didn’t update according to hardware data under certain circumstances.
-[Update] Host tempo sync adjustments.
-[New] Local off message is sent to hardware up on plugin initialization & up on project recall.
-[New] Updated Windows virtual MIDI driver.
-[Update] VirusTI can be used via USB on MAC, but only for MIDI and SysEx streams. Windows not tested.
-[Fixed] When FM Amount was moved from the hardware, the whole daw crashed.
-[Fixed] Requesting and sending data works as expected.
-[Fixed] Delay modes were not displayed properly in TI-series viruses.
-[Fixed] Part volume sliders work as expected.
-[Fixed] Librarian now works in Windows platforms as it should. No more empty slots after saving your favorite bank / requested bank.
-[New] Added RAM A-D and Rom A-Z slots to librarian page for TI models.
-[Update] Improved the whole patch receiving scenario to make it faster and smoother.
+* [New] Added option to save single patches from plugin part to librarian.
+* [Fixed] Arp was set to off on VirusTI under certain circumstances.
+* [Update] Outgoing SysEx chunk changed up on plugin load. Data now matches the model selected on “multi settings” tab.
+* [Update] Depth & contrast added to the “selected model” color.
+* [Fixed] Resolved an issue, where banks were not readable by the plugin if hardware Device ID was bigger than 0.
+* [Fixed] Resolved an issue, where plugin graphics didn’t update according to hardware data under certain circumstances.
+* [Update] Host tempo sync adjustments.
+* [New] Local off message is sent to hardware up on plugin initialization & up on project recall.
+* [New] Updated Windows virtual MIDI driver.
+* [Update] VirusTI can be used via USB on MAC, but only for MIDI and SysEx streams. Windows not tested.
+* [Fixed] When FM Amount was moved from the hardware, the whole daw crashed.
+* [Fixed] Requesting and sending data works as expected.
+* [Fixed] Delay modes were not displayed properly in TI-series viruses.
+* [Fixed] Part volume sliders work as expected.
+* [Fixed] Librarian now works in Windows platforms as it should. No more empty slots after saving your favorite bank / requested bank.
+* [New] Added RAM A-D and Rom A-Z slots to librarian page for TI models.
+* [Update] Improved the whole patch receiving scenario to make it faster and smoother.
 
 
 Version 1.3.3 / 2015-07-28
 
-[Fixed] When FM Amount was moved from the hardware, the whole daw crashed.
-[Fixed] Requesting and sending data works as expected.
-[Fixed] Delay modes were not displayed properly in TI-series viruses.
-[Fixed] Part volume sliders work as expected.
-[Fixed] Librarian now works in Windows platforms as it should. No more empty slots after saving your favorite bank / requested bank.
-[New] Added Ram A-D and Rom A-Z slots to librarian page for TI models.
-[Update] Improved the whole patch receiving scenario to make it faster and smoother.
+* [Fixed] When FM Amount was moved from the hardware, the whole daw crashed.
+* [Fixed] Requesting and sending data works as expected.
+* [Fixed] Delay modes were not displayed properly in TI-series viruses.
+* [Fixed] Part volume sliders work as expected.
+* [Fixed] Librarian now works in Windows platforms as it should. No more empty slots after saving your favorite bank / requested bank.
+* [New] Added Ram A-D and Rom A-Z slots to librarian page for TI models.
+* [Update] Improved the whole patch receiving scenario to make it faster and smoother.
 
 
 Version 1.3.1 / 2015-07-07
 
-[Fixed] Transpose from multimode mixer and fx 1 / settings 1 page now links to each other.
-[Fixed] Force to device button now behaves as it is supposed to.
-[Fixed] If TI was selected as current model and patch was changed, arp mode was not updated on the UI.
-[Update] MIDI In and Out selections made bigger.
-[Update] Changed default patch tempo to 120BPM.
-[New] Added virus model display to the top of the UI to show currently selected model.
-[New] Added ”Disable MIDI from Virus” button to fx 2 /settings 2 page for those who wish to use their TI as a remote platform while the plugin is in use.
+* [Fixed] Transpose from multimode mixer and fx 1 / settings 1 page now links to each other.
+* [Fixed] Force to device button now behaves as it is supposed to.
+* [Fixed] If TI was selected as current model and patch was changed, arp mode was not updated on the UI.
+* [Update] MIDI In and Out selections made bigger.
+* [Update] Changed default patch tempo to 120BPM.
+* [New] Added virus model display to the top of the UI to show currently selected model.
+* [New] Added ”Disable MIDI from Virus” button to fx 2 /settings 2 page for those who wish to use their TI as a remote platform while the plugin is in use.
 
 
 Version 1.3.0 / 2015-06-16
 
-[New] Pitch bend, Channel- and Poly Aftertouch values are now passed through the plugin if applied.
-[New] Soft knob assignments added to ARP tab. Virus TI has 3 soft knobs, while previous models only 2.
-[Fixed] Parameter Links and link values are being recalled as they should.
-[Fixed] Improved filter link functionality.
-[Fixed] If unison was set to 2 or higher in virus ti patch, value was recalled wrong after project was reopened.
-[Fixed] Filter 2 Cutoff now recalls value 127 after project reopen on Init patches.
-[Update] Improved patch data handling when sending TI patches from librarian to hardware.
-[Fixed] Chorus settings was handled incorrectly within the plugin UI when patch file format was older than TI OS 4.5 specific.
-[Fixed] Envelope 3 & 4 parameters were not received up on project reload / recall.
-[Update] Default values for knobs and buttons copied from Virus TI init patch.
-[Update] Increased delay between patch transfers per model. TI patches delay between each patch is set to 1 sec while previous models delay is 0.5 sec.
-[Update] Improved incoming midi data handler which addresses CC to knobs faster & less load to cpu.
+* [New] Pitch bend, Channel- and Poly Aftertouch values are now passed through the plugin if applied.
+* [New] Soft knob assignments added to ARP tab. Virus TI has 3 soft knobs, while previous models only 2.
+* [Fixed] Parameter Links and link values are being recalled as they should.
+* [Fixed] Improved filter link functionality.
+* [Fixed] If unison was set to 2 or higher in virus ti patch, value was recalled wrong after project was reopened.
+* [Fixed] Filter 2 Cutoff now recalls value 127 after project reopen on Init patches.
+* [Update] Improved patch data handling when sending TI patches from librarian to hardware.
+* [Fixed] Chorus settings was handled incorrectly within the plugin UI when patch file format was older than TI OS 4.5 specific.
+* [Fixed] Envelope 3 & 4 parameters were not received up on project reload / recall.
+* [Update] Default values for knobs and buttons copied from Virus TI init patch.
+* [Update] Increased delay between patch transfers per model. TI patches delay between each patch is set to 1 sec while previous models delay is 0.5 sec.
+* [Update] Improved incoming midi data handler which addresses CC to knobs faster & less load to cpu.
 
 
 Version 1.2.7 / 2015-06-05
 
-[Fixed] Modulation slots 1-6 fixed for virus ti.
-[Fixed] Lfo2 parameters fixed for all models.
-[Fixed] Patch naming function fixed for all models and name won’t include silly / unnecessary characters up on project recall.
+* [Fixed] Modulation slots 1-6 fixed for virus ti.
+* [Fixed] Lfo2 parameters fixed for all models.
+* [Fixed] Patch naming function fixed for all models and name won’t include silly / unnecessary characters up on project recall.
 
 
 Version 1.2.6
 
-[Fixed] Parameter Links and link values are being recalled as they should.
-[Fixed] Improved filter link functionality.
-[Fixed] If unison was set to 2 or higher in virus ti patch, value was recalled wrong after project was reopened.
-[Fixed] Filter 2 Cutoff now recalls value 127 after project reopen on Init patches.
+* [Fixed] Parameter Links and link values are being recalled as they should.
+* [Fixed] Improved filter link functionality.
+* [Fixed] If unison was set to 2 or higher in virus ti patch, value was recalled wrong after project was reopened.
+* [Fixed] Filter 2 Cutoff now recalls value 127 after project reopen on Init patches.
 
 
 Version 1.2.5 / 2015-05-29
 
-[Fixed] Midi in & out labels updated. Why Reset MIDI Device? Because if you select wrong device accidentally, you have to choose reset midi device before selecting the right one.
-[Fixed] Improved incoming sysex data checks for patch data.
+* [Fixed] Midi in & out labels updated. Why Reset MIDI Device? Because if you select wrong device accidentally, you have to choose reset midi device before selecting the right one.
+* [Fixed] Improved incoming sysex data checks for patch data.
 
 
 Version 1.2.4
 
-[New] MIDI Volume Enable buttons updated for Virus TI.
-[Fixed] Input section area updated to match data with Virus TI.
+* [New] MIDI Volume Enable buttons updated for Virus TI.
+* [Fixed] Input section area updated to match data with Virus TI.
 
 
 Version 1.2.3 
 
-[New] New graphics created for Virus TI distortion layers to match controls from hardware.
-[Fixed] Improved sysex and midi mapping of distortion parameters.
+* [New] New graphics created for Virus TI distortion layers to match controls from hardware.
+* [Fixed] Improved sysex and midi mapping of distortion parameters.
 
 
 Version 1.2.2
 
-[Fixed] Secondary output list updated for Virus TI.
+* [Fixed] Secondary output list updated for Virus TI.
 
 
 Version 1.2.1
 
-[Fixed] Updated Tempo knob function for all models. From now on, tempo will be fetched for the plugin UI only if the button is on. Defaults to off.
-[Note] Plugin defaults to Virus C as a chosen model when initialized.
+* [Fixed] Updated Tempo knob function for all models. From now on, tempo will be fetched for the plugin UI only if the button is on. Defaults to off.
+* [Note] Plugin defaults to Virus C as a chosen model when initialized.
 
 
 Version 1.2.0
 
-[New] New controls added Virus TI unison functions & Ring Modulator knob.
-[New] Fixed / added hyperchorus amount knob.
-[Fixed] Updated graphics for Vocoder to show Release instead of Decay for carrier.
+* [New] New controls added Virus TI unison functions & Ring Modulator knob.
+* [New] Fixed / added hyperchorus amount knob.
+* [Fixed] Updated graphics for Vocoder to show Release instead of Decay for carrier.
 
 
 Version 1.1.9
 
-[Fixed] Fixed all drop menus and their “displays” while changing value from hardware.
-[Fixed] EQ now show Hz value in plugin display and delay values shown in ms (including predelay from reverb).
-[Fixed] LFO mono/poly switch updated (it was inverted).
-[Fixed] Updated a lot controllers to match incoming data from hardware.
-[Fixed] Graphics cpu load improved.
+* [Fixed] Fixed all drop menus and their “displays” while changing value from hardware.
+* [Fixed] EQ now show Hz value in plugin display and delay values shown in ms (including predelay from reverb).
+* [Fixed] LFO mono/poly switch updated (it was inverted).
+* [Fixed] Updated a lot controllers to match incoming data from hardware.
+* [Fixed] Graphics cpu load improved.
 
 
 Version 1.1.8
 
-[Note] Removed part transpose from multimixer window and replaced it with patch transpose info since Virus TI does not have transpose data stored in multi.
+* [Note] Removed part transpose from multimixer window and replaced it with patch transpose info since Virus TI does not have transpose data stored in multi.
 
 
 Version 1.1.7 / 2015-05-18
 
-[Fixed] When oscillator 1 and / or oscillator 2 was in hypersaw mode, local detune and density knobs were not responding.
-[Note] Oscillator balance knob now shows values from -100% to 100%.
+* [Fixed] When oscillator 1 and / or oscillator 2 was in hypersaw mode, local detune and density knobs were not responding.
+* [Note] Oscillator balance knob now shows values from -100% to 100%.
 
 
 Version 1.1.6 / 2015-05-17
 
-[Fixed] Renamed envelope names for Virus TI. Amplifier renamed to Filter in dropdown menu.
-[Fixed] Updated outgoing multi data which didn’t match the data set on plugin user interface. This caused parts being set to muted on project reload.
-[Fixed] Resolved a problem where sound was altered up on project reload.
-[Fixed] Resolved a problem where sysex checksum was miscalculated on models prior to TI.
+* [Fixed] Renamed envelope names for Virus TI. Amplifier renamed to Filter in dropdown menu.
+* [Fixed] Updated outgoing multi data which didn’t match the data set on plugin user interface. This caused parts being set to muted on project reload.
+* [Fixed] Resolved a problem where sound was altered up on project reload.
+* [Fixed] Resolved a problem where sysex checksum was miscalculated on models prior to TI.
 
 
 Version 1.1.5
 
-[Fixed] If patches are changed from hardware, patch data will be updated to the plugin user interface as well.
-[Fixed] Revised the way how incoming sysex data was checked. This update has a huge impact in cases where patch data was missing on whole bank request.
-[Fixed] Updated Filter Cutoff 1 and Filter Cutoff 2 link behavior. If link is on, Filter Cutoff 2 now behaves as offset just like in hardware.
+* [Fixed] If patches are changed from hardware, patch data will be updated to the plugin user interface as well.
+* [Fixed] Revised the way how incoming sysex data was checked. This update has a huge impact in cases where patch data was missing on whole bank request.
+* [Fixed] Updated Filter Cutoff 1 and Filter Cutoff 2 link behavior. If link is on, Filter Cutoff 2 now behaves as offset just like in hardware.
 
 
 Version 1.1.4
 
-[Fixed] Fixed an issue where multi name was not saved as supposed to.
-[Fixed] Fixed an issue where patch bank names were not updated if empty slots were located inside the midi file. Empty slots are now empty within the librarian as well.
-[New] Added function to read midi and sysex files from subfolders.
+* [Fixed] Fixed an issue where multi name was not saved as supposed to.
+* [Fixed] Fixed an issue where patch bank names were not updated if empty slots were located inside the midi file. Empty slots are now empty within the librarian as well.
+* [New] Added function to read midi and sysex files from subfolders.
 
 
 Version 1.1.3
 
-[New] Automation parameter names are updated. Layer renamed to part and every part has a identifier to indicate which part parameter is used. For example: [1] Filter 1 Cutoff 1.
-[Fixed] Filter and Vocoder parameter link options updated.
+* [New] Automation parameter names are updated. Layer renamed to part and every part has a identifier to indicate which part parameter is used. For example: * [1] Filter 1 Cutoff 1.
+* [Fixed] Filter and Vocoder parameter link options updated.
 
 
 Version 1.1.2
 
-[Fixed] Fixed an issue where vocoder parameters didn’t work as expected.
-[Fixed] Fixed an issue where envelope velocity and resonance velocity sensitivity knobs didn’t work as expected.
-[Note] Removed effect mix knob from delay section, because the knob was actually used for phaser mix.
-[New] Link functions between knobs completely rewritten.
+* [Fixed] Fixed an issue where vocoder parameters didn’t work as expected.
+* [Fixed] Fixed an issue where envelope velocity and resonance velocity sensitivity knobs didn’t work as expected.
+* [Note] Removed effect mix knob from delay section, because the knob was actually used for phaser mix.
+* [New] Link functions between knobs completely rewritten.
 
 
 Version 1.1.1
 
-[Fixed] Fixed a issue where plugin would crash if patch file name is longer than 32 characters.
+* [Fixed] Fixed a issue where plugin would crash if patch file name is longer than 32 characters.
 
 
 Version 1.1.0 / 2015-02-14
 
-[New] Manual has been completely re-written and it can be view from either product page, plug-in updates page or you can find it from your HDD where you installed it.
-[New] Modulation Matrix and LFO slots updated if model selection is VirusTI.
-[New] Rest of the known VirusTI controls added and data being parsed to the UI when changing patches.
-[New] Value display now shows knob, menu, button “value” in screen based on the controller AND current #cc value inside []-characters.
-[Fixed] Filter link switch didn’t work as supposed under certain Virus models.
-[Fixed] Patch names can be only 10 characters long in the displays.
-[Fixed] Removed “Select MIDI Ports” notification popup due to the fact that it was annoying
-[Fixed] Under some conditions, processing data window did not appear.
-[Fixed] Reduced graphics cpu load.
-[Fixed] Incoming multi data was skipped after parts data was processed prior to last update.
+* [New] Manual has been completely re-written and it can be view from either product page, plug-in updates page or you can find it from your HDD where you installed it.
+* [New] Modulation Matrix and LFO slots updated if model selection is VirusTI.
+* [New] Rest of the known VirusTI controls added and data being parsed to the UI when changing patches.
+* [New] Value display now shows knob, menu, button “value” in screen based on the controller AND current #cc value inside * []-characters.
+* [Fixed] Filter link switch didn’t work as supposed under certain Virus models.
+* [Fixed] Patch names can be only 10 characters long in the displays.
+* [Fixed] Removed “Select MIDI Ports” notification popup due to the fact that it was annoying
+* [Fixed] Under some conditions, processing data window did not appear.
+* [Fixed] Reduced graphics cpu load.
+* [Fixed] Incoming multi data was skipped after parts data was processed prior to last update.
 
 
 Version 1.0.9
 
-[New] Updated librarian graphics to meet the patch numbering from hardware. Now counts from 0 to 127.
-[New] Added Virus|TI Oscillators 1 & 2 with their knobs, menus etc.
-[New] Added Virus|TI Reverb functions to the plugin.
-[New] Graphics updated to included buttons, menus and switches for new features.
+* [New] Updated librarian graphics to meet the patch numbering from hardware. Now counts from 0 to 127.
+* [New] Added Virus|TI Oscillators 1 & 2 with their knobs, menus etc.
+* [New] Added Virus|TI Reverb functions to the plugin.
+* [New] Graphics updated to included buttons, menus and switches for new features.
 
 
 Version 1.0.8 
 
-[New] Added Virus|TI Mod Matrix destinations for all slots that were missing.
-[New] Added Virus|TI Envelope 3 & Envelope 4 knobs to the user interface. They can be viewed by selecting different envelope from menu.
+* [New] Added Virus|TI Mod Matrix destinations for all slots that were missing.
+* [New] Added Virus|TI Envelope 3 & Envelope 4 knobs to the user interface. They can be viewed by selecting different envelope from menu.
 
 
 Version 1.0.7
 
-[Fixed] Improved incoming MIDI data transmission over the plugin to the hardware.
-[Fixed] Some controls (amp release, lfo1 rate, lfo2 rate) didn’t respond to incoming midi messages.
-[Fixed] Delay / Reverb settings and knobs didn’t work as supposed, when adjusting knob from hardware.
-[Fixed] When Lfo 1 osc 1 & 2 link was on, link didn’t work when osc 2 knob was moved.
-[Fixed] When Lfo 2 filter 1 & 2 link was on, link didn’t work when filter 2 knob was moved.
-[Fixed] Oscillator 1 & 2 Semitone values displayed wrong value on plugin interface when knob was moved from hardware.
-[New] Override Patch Tempo button in settings #2 tab now fetches tempo information from your host and overrides the current tempo of the hardware. If tempo is changed after setting MIDI I/O from the plugin, original tempo data is intact. Reload either MIDI in or MIDI out port from plugin interface to update Virus tempo info.
-[New] User can now scroll thru hardware memory per part from the previous / next buttons. Current bank selection from plugin selects same bank from hardware. User can also scroll thru the library when “control library from midi / hw” is enabled as announced in v1.0.5 update.
-[Note] In Apple Logic, program change commands that come in from channel 1 won’t be sent towards any plugins. This means that you have to use your master keyboard on a different channel in order to manage librarian / hardware memory with it :)
+* [Fixed] Improved incoming MIDI data transmission over the plugin to the hardware.
+* [Fixed] Some controls (amp release, lfo1 rate, lfo2 rate) didn’t respond to incoming midi messages.
+* [Fixed] Delay / Reverb settings and knobs didn’t work as supposed, when adjusting knob from hardware.
+* [Fixed] When Lfo 1 osc 1 & 2 link was on, link didn’t work when osc 2 knob was moved.
+* [Fixed] When Lfo 2 filter 1 & 2 link was on, link didn’t work when filter 2 knob was moved.
+* [Fixed] Oscillator 1 & 2 Semitone values displayed wrong value on plugin interface when knob was moved from hardware.
+* [New] Override Patch Tempo button in settings #2 tab now fetches tempo information from your host and overrides the current tempo of the hardware. If tempo is changed after setting MIDI I/O from the plugin, original tempo data is intact. Reload either MIDI in or MIDI out port from plugin interface to update Virus tempo info.
+* [New] User can now scroll thru hardware memory per part from the previous / next buttons. Current bank selection from plugin selects same bank from hardware. User can also scroll thru the library when “control library from midi / hw” is enabled as announced in v1.0.5 update.
+* [Note] In Apple Logic, program change commands that come in from channel 1 won’t be sent towards any plugins. This means that you have to use your master keyboard on a different channel in order to manage librarian / hardware memory with it :)
 
 
 Version 1.0.6 / 2015-01-15
 
-[Fixed] When user clicked to store all patches from librarian to hardware, patch data was not sent to right locations in hardware.
-[Fixed] When data was requested from TI to the librarian, it was not received by the plugin.
-[New] Added pop-up message window to remind selecting MIDI Devices before making any editing & stuff (only pops up if device is not selected & user clicks on main tab or multi settings button)
-[New] Incoming MIDI Program Change changes patch in hardware and the patch is automatically fetched to the active plugin part.
-[New] Incoming MIDI Program Change sends patch from librarians selected list to hardware if “control library from midi / hw” is enabled.
-[New] Incoming patch change from Virus (sysex) automatically fetches current preset from the hardware to the plugin part.
-[New] Incoming patch change from Virus (sysex) sends patch from librarians selected list to hardware if “control library from midi / hw” is enabled.
+* [Fixed] When user clicked to store all patches from librarian to hardware, patch data was not sent to right locations in hardware.
+* [Fixed] When data was requested from TI to the librarian, it was not received by the plugin.
+* [New] Added pop-up message window to remind selecting MIDI Devices before making any editing & stuff (only pops up if device is not selected & user clicks on main tab or multi settings button)
+* [New] Incoming MIDI Program Change changes patch in hardware and the patch is automatically fetched to the active plugin part.
+* [New] Incoming MIDI Program Change sends patch from librarians selected list to hardware if “control library from midi / hw” is enabled.
+* [New] Incoming patch change from Virus (sysex) automatically fetches current preset from the hardware to the plugin part.
+* [New] Incoming patch change from Virus (sysex) sends patch from librarians selected list to hardware if “control library from midi / hw” is enabled.
 Version 1.0.5
 
-[Fixed] Patch data didn’t store properly after requesting a whole bank from hardware.
-[Fixed] Patch display was messed up after flipping between Multi Files and Patch Files in librarian.
-[New] Created previous and next buttons into the mini mixer to make patch scrolling from the library a bit faster. No need to click between tabs in order to reach for next patch.
+* [Fixed] Patch data didn’t store properly after requesting a whole bank from hardware.
+* [Fixed] Patch display was messed up after flipping between Multi Files and Patch Files in librarian.
+* [New] Created previous and next buttons into the mini mixer to make patch scrolling from the library a bit faster. No need to click between tabs in order to reach for next patch.
 
 
 Version 1.0.4 / 2015-01-10
 
-[Fixed] Plugin crashed if user would press buttons / change values thru menus from hardware.
+* [Fixed] Plugin crashed if user would press buttons / change values thru menus from hardware.
 
 
 Version 1.0.3 / 2015-01-09
 
-[Fixed] DeviceID values were messed up while receiving and sending data.
-[Fixed] System Delay enable button didn’t show right value once data was received.
-[Fixed] System Arp enable button didn’t show right value once data was received.
-[Fixed] Arpeggiator knobs and buttons didn’t have any effect while moving them from ui.
-[Fixed] MIDI Destination selection didn’t show right value once data was received.
-[Fixed] Part output selections didn’t work on all channels.
-[Fixed] Cutoff link worked only from cutoff 2 knob.
-[Fixed] Filter link didn’t work on unpaired part channels.
-[Fixed] Requesting data from hardware memory skipped sounds from hardware.
-[Fixed] Plugin crashed on oscillator 3 semitone knob movements from hardware.
-[Fixed] Data recall was not handled right once the project was reloaded (almost on every daw).
-[Fixed] Once data came in from hardware, Multi knobs, sliders & buttons didn’t as expected.
-[New] Memory usage reduced by up-to 60%.
-[New] Filter 1 & 2 link switch functions added.
-[New] MIDI messages that come in from other than selected MIDI IN device, are now processed. This means you can assign MIDI CC’s that are Virus compatible to your external controller and control the software & hardware with it.
+* [Fixed] DeviceID values were messed up while receiving and sending data.
+* [Fixed] System Delay enable button didn’t show right value once data was received.
+* [Fixed] System Arp enable button didn’t show right value once data was received.
+* [Fixed] Arpeggiator knobs and buttons didn’t have any effect while moving them from ui.
+* [Fixed] MIDI Destination selection didn’t show right value once data was received.
+* [Fixed] Part output selections didn’t work on all channels.
+* [Fixed] Cutoff link worked only from cutoff 2 knob.
+* [Fixed] Filter link didn’t work on unpaired part channels.
+* [Fixed] Requesting data from hardware memory skipped sounds from hardware.
+* [Fixed] Plugin crashed on oscillator 3 semitone knob movements from hardware.
+* [Fixed] Data recall was not handled right once the project was reloaded (almost on every daw).
+* [Fixed] Once data came in from hardware, Multi knobs, sliders & buttons didn’t as expected.
+* [New] Memory usage reduced by up-to 60%.
+* [New] Filter 1 & 2 link switch functions added.
+* [New] MIDI messages that come in from other than selected MIDI IN device, are now processed. This means you can assign MIDI CC’s that are Virus compatible to your external controller and control the software & hardware with it.

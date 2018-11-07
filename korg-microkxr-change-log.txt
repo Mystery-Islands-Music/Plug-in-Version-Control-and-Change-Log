@@ -1,57 +1,58 @@
 Version 1.2.9 / 2018-11-07
 
-[New] Multi level folder support for patches.
-[New] Advanced MIDI filter included. This can be accessed from Global Settings -> Advance MIDI Settings under the plug-in display.
-[Fixed] Randomizer works more reliably. Randomize button now randomizes the current layer instead of showing up another popup window to click. One click -> randomize patch -> done.
-[Fixed] 32-bit installers work as expected in PC platform.
-[Fixed] Total Recall works as expected.
-[GUI] Aligned elements a bit better.
-[Other] Performance tweaks in SysEx and MIDI streams.
+* [IMPORTANT] This update is not backward compatible! We had to change the code function in order to make the total recall with layer selections work as they were stored in the session.
+* [New] Multi level folder support for patches.
+* [New] Advanced MIDI filter included. This can be accessed from Global Settings -> Advance MIDI Settings under the plug-in display.
+* [Fixed] Randomizer works more reliably. Randomize button now randomizes the current layer instead of showing up another popup window to click. One click -> randomize patch -> done.
+* [Fixed] 32-bit installers work as expected in PC platform.
+* [Fixed] Total Recall works as expected.
+* [GUI] Aligned elements a bit better.
+* [Other] Performance tweaks in SysEx and MIDI streams.
 
 
 Version 1.2.8 / 2017-11-14
 
-[Fixed] Resolved issue where plug-in crashed during plug-in scan.
+* [Fixed] Resolved issue where plug-in crashed during plug-in scan.
 
 
 Version 1.2.7 / 2017-11-04 PC ONLY
 
-[Fixed] 64bit plug-in is now actually 64bit plug-in. NOTE: not backward compatible!
+* [Fixed] 64bit plug-in is now actually 64bit plug-in. NOTE: not backward compatible!
 
 
 Version 1.2.6 / 2017-10-24
 
-[Fixed] In some cases note off messages was tried to sent out while there was no connection, which caused crash.
-[Fixed] MIDI input status LED should be more responsive now.
+* [Fixed] In some cases note off messages was tried to sent out while there was no connection, which caused crash.
+* [Fixed] MIDI input status LED should be more responsive now.
 
 
 Version 1.2.5 / 2017-10-17
 
-[Fixed] Resolved “Connection time-out” issue when microKorg has MIDI Clock set in Internal mode. Now plug-in sends MIDI Clock -> External message to hardware if data does not match with the plug-in. This only happens while initializing plug-in. Note that if clock is set to internal mode, data does not get called properly and this cause time-out issues.
-[Fixed] Plug-in caused DAW to crash if tempo sync to host was activated and DAW was closed.
-[Fixed] Plug-in tried to send MIDI messages to hardware before it was connected.
-[Fixed] Plug-in was recalling hardware device ID (Global MIDI Channel) from wrong SysEx byte.
+* [Fixed] Resolved “Connection time-out” issue when microKorg has MIDI Clock set in Internal mode. Now plug-in sends MIDI Clock -> External message to hardware if data does not match with the plug-in. This only happens while initializing plug-in. Note that if clock is set to internal mode, data does not get called properly and this cause time-out issues.
+* [Fixed] Plug-in caused DAW to crash if tempo sync to host was activated and DAW was closed.
+* [Fixed] Plug-in tried to send MIDI messages to hardware before it was connected.
+* [Fixed] Plug-in was recalling hardware device ID (Global MIDI Channel) from wrong SysEx byte.
 
 
 Version 1.2.4 / 2017-10-13
 
-[Fixed] MIDI and connection error fixes. Now when program is changed from microKorg, it should update the plug-in user interface accordingly. Check and make sure your microKorg MIDI channel is set to 1 with EDIT SELECT 2 -> MIDI -> MIDI CH = 1.
-[Fixed] Renaming a patch in librarian did not work as expected.
-[Fixed] User was able to change top bank in Librarian view after pasting, renaming a patch or requesting patch data. This should not be possible until data is saved to file or changes are discarded by the user.
+* [Fixed] MIDI and connection error fixes. Now when program is changed from microKorg, it should update the plug-in user interface accordingly. Check and make sure your microKorg MIDI channel is set to 1 with EDIT SELECT 2 -> MIDI -> MIDI CH = 1.
+* [Fixed] Renaming a patch in librarian did not work as expected.
+* [Fixed] User was able to change top bank in Librarian view after pasting, renaming a patch or requesting patch data. This should not be possible until data is saved to file or changes are discarded by the user.
 
 
 Version 1.2.3 / 2017-09-30
 
-[New] Randomizer. Yes – user can now randomize Timbre 1 or Timbre 2. Randomizer button is below the main screen. If section locks are active, those parts of the sound are not randomized.
-[New] Master Keyboard selector in Global Settings page. When Master Keyboard switch is on, messages from microKorg will be ignored unless the plug-in channel is chosen in DAW.
-[New] MIDI Input stated led now blinks when receiving SysEx data too.
-[Fixed] Filter Type, Delay and Mod FX parameters now work as expected.
-[Fixed] Librarian Copy/Paste and Drag/Drop functions fixed.
-[Fixed] Timeout issues are gone! Obviously you have to make sure that Global MIDI channel is corresponding to the one with the hardware.
-[Fixed] Librarian Bank Edit Menu errors / unresponsive behaviour fixed.
-[Fixed] If Global Data was requested from hardware, plug-in did not handle the data in proper way.
-[Fixed] If Global MIDI channel was set to different value than 1, MIDI messages in some cases were sent to wrong channel by the plug-in.
-[Other] Some invisible changes that makes life a lot better :-)
+* [New] Randomizer. Yes – user can now randomize Timbre 1 or Timbre 2. Randomizer button is below the main screen. If section locks are active, those parts of the sound are not randomized.
+* [New] Master Keyboard selector in Global Settings page. When Master Keyboard switch is on, messages from microKorg will be ignored unless the plug-in channel is chosen in DAW.
+* [New] MIDI Input stated led now blinks when receiving SysEx data too.
+* [Fixed] Filter Type, Delay and Mod FX parameters now work as expected.
+* [Fixed] Librarian Copy/Paste and Drag/Drop functions fixed.
+* [Fixed] Timeout issues are gone! Obviously you have to make sure that Global MIDI channel is corresponding to the one with the hardware.
+* [Fixed] Librarian Bank Edit Menu errors / unresponsive behaviour fixed.
+* [Fixed] If Global Data was requested from hardware, plug-in did not handle the data in proper way.
+* [Fixed] If Global MIDI channel was set to different value than 1, MIDI messages in some cases were sent to wrong channel by the plug-in.
+* [Other] Some invisible changes that makes life a lot better :-)
 
 
 Version 1.2.1 / 2017-07-12
