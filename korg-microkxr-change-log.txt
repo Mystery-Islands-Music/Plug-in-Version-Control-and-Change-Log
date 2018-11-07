@@ -1,4 +1,4 @@
-Version 1.2.9 / 2018-11-07
+Version 1.2.9 / 2018-11-08
 
 * [IMPORTANT] This update is not backward compatible! We had to change the code function in order to make the total recall with layer selections work as they were stored in the session.
 * [New] Multi level folder support for patches.
