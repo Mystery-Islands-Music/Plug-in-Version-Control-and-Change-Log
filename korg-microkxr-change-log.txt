@@ -2,14 +2,14 @@ Version 1.2.9 / 2018-11-08
 
 [IMPORTANT] This update is not backward compatible! We had to change the code function in order to make the total recall with layer selections work as they were stored in the session.
 
-[New] RESIZE-ABLE GUI. Choose your GUI size from the dropdown list on top of the plug-in GUI and relaunch the DAW or plug-in! Graphics are scaled up or down by 25%, so don't blame us if it does not look neat ;) This is first AID until we update our framework for realtime resizing.
-[New] Multi level folder support for patches.
-[New] Advanced MIDI filters included. This can be accessed from Global Settings -> Advanced MIDI Settings under the plug-in display.
-[Fixed] Randomizer works more reliably. Randomize button now randomizes the current layer instead of showing up another popup window to click. One click -> randomize patch -> done.
-[Fixed] 32-bit installers work as expected in PC platform.
-[Fixed] Total Recall works as expected.
-[GUI] Aligned elements a bit better.
-[Other] Performance tweaks in SysEx and MIDI streams.
+* [New] RESIZE-ABLE GUI. Choose your GUI size from the dropdown list on top of the plug-in GUI and relaunch the DAW or plug-in! Graphics are scaled up or down by 25%, so don't blame us if it does not look neat ;) This is first AID until we update our framework for realtime resizing.
+* [New] Multi level folder support for patches.
+* [New] Advanced MIDI filters included. This can be accessed from Global Settings -> Advanced MIDI Settings under the plug-in display.
+* [Fixed] Randomizer works more reliably. Randomize button now randomizes the current layer instead of showing up another popup window to click. One click -> randomize patch -> done.
+* [Fixed] 32-bit installers work as expected in PC platform.
+* [Fixed] Total Recall works as expected.
+* [GUI] Aligned elements a bit better.
+* [Other] Performance tweaks in SysEx and MIDI streams.
 
 
 Version 1.2.8 / 2017-11-14
