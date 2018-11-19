@@ -1,3 +1,10 @@
+Version 1.3.1 / 2018-11-19
+
+[IMPORTANT] This update is not backward compatible below version 1.2.8! We had to change the code function in order to make the total recall with layer selections work as they were stored in the session.
+
+* [New] Added Legacy Skin (default) by huge demand and Platinum Skin. S-Model Skin is still available too. Simply choose GUI Skin from the plug-in main window and relaunch your project or re-insert the plug-in if there is no data in the plug-in already. Skin selection is global so same skin applies to all instances of the plug-in.
+
+
 Version 1.3.0 / 2018-11-09
 
 [IMPORTANT] This update is not backward compatible below version 1.2.8! We had to change the code function in order to make the total recall with layer selections work as they were stored in the session.
