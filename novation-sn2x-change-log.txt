@@ -1,0 +1,43 @@
+Version 1.0.2 / 2018-11-23
+
+[NOTE] This version might have issues with backward compatibility - We are very sorry about that, but in order to keep our product updated, this was a mandatory step to take.
+
+* [New] Patch Librarian now includes search function. This is limited to single patch files (programs). You can toggle search window on by clicking the magnify glass in the middle section of the librarian view. Please note that letter size matters.
+* [New] Resize-able GUI. There are now three different size options available and we hope they work for you. We can not make the plug-in UI too small or too big with current framework, or the graphics will look dodgy as the images are scaled. 
+* [New] Platinum skin! User can now choose between Normal and Platinum themed skin.
+* [New] Two new section locks added: 1 Section Lock Performance MIDI Channel and 2 Section Lock Performance Output Routing. When locks are on, incoming performance data from hardware will not change the MIDI channel or Output routings of the part. Data is sent back to hardware if locks are on, which might cause a bit waiting, but if you want to keep your outputs and MIDI channels set straight, this is your option. These locks are on by default.
+* [Note] Global TX AT parameter value is missing (Transmit Aftertouch [supernova II / nova II keys]). If anyone has this parameter to send over, please do so (both switch on and switch off - should be MSB/LSB value).
+* [Fixed] Patch Librarian tab program numbers fixed so they start from 000 instead of 001 according to Novation standards.
+* [Fixed] Local Control switch on the plug-in GUI did not set the plug-in status correctly to handle MIDI messages properly.
+* [Fixed] Arp Mute status was set to wrong value while recalling data.
+* [Fixed] Arp Gate knob did not work as expected.
+* [Fixed] Vocoder Width value 11 caused SysEx package to split, therefore total recall of the part did not succeed.
+* [Fixed] Multi settings were not processed properly when requesting data to plug-in GUI.
+* [Other] Changed some librarian menu item names to reflect the usage target a bit better.
+
+
+Version 1.0.1 / 2018-11-03
+
+* [New] Added secondary indicator of data request process to show how many patches / performances / patterns has been requested / written so far.
+* [Fixed] Novation Supernova II Keyboard added to model selection list to ensure data from SN II Keyboard can be requested and written to hardware.
+
+
+Version 1.0.0 / 2018-11-01
+
+* [New] Patterns will be stored to SNX format AND they will have name stored with 'em for easier browsing.
+* [New] It appears that ARP on/off switch is not responding while the hardware is in Performance mode, therefore some patches with ARP toggled on, won't be called properly. We added a flag per patch, if arp is on in it, to force toggle it on / off depending of the patch ARP status. This does not work with patches changed from hardware.
+* [New] Part Mute buttons / part selector buttons work as expected.
+* [New] Plug-in follows part selector value when requesting performance data from hardware and passes the same value back up on data dump.
+* [New] Randomizer implemented into the plug-in.
+* [New] Arp Section Lock implemented into the plug-in.
+* [Fixed] Part MUTE toggle switch and part selector switches now work as expected in both, software and hardware.
+* [Fixed] Plug-in display updates patch and category names accordingly after requesting data from hardware.
+* [Fixed] Wrong parameters were used with librarian menu items which lead to plug-in crash after saving banks and starting to scroll saved data.
+* [Fixed] Resolved issue where 32-bit installers did not work as expected.
+* [Fixed] In some cases incoming parameters were not recognized properly per part.
+* [Fixed] In some cases outgoing values from parameters were not sending appropriate values to hardware.
+* [Fixed] Resolved issue where changing MIDI channel from plug-in / hardware could cause the plug-in malfunctioning. Now if MIDI channel is changed, from hardware or from plug-in GUI, data will be requested / sent to with hardware.
+* [Fixed] Resolved issue where 32-bit installers did not work as expected.
+* [Other] Changed "Send all MIDI data from Plug-in:" to "Directly to Hardware" by default, since some users with large buffer settings were not able to get notes triggered at all.
+* [Other] Overall MIDI performance adjustments.
+* [NOTE] When browsing Performances from Librarian, keep in mind that you need to have the ORIGINAL PRESETS in the patch banks which were used to store that particular performance. Unfortunately this data is not stored with the hardware memory nor with the plug-in memory, but we will implement this feature with all our plug-ins so that software stored performances will also recall the presets used with them.
