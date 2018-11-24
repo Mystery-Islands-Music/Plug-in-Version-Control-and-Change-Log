@@ -1,0 +1,16 @@
+Version 1.0.2 / 2018-11-25
+
+[NOTE] This version might have issues with backward compatibility - We are very sorry about that, but in order to keep our product updated, this was a mandatory step to take.
+
+* [New] Patch Librarian now includes search function. This is limited to single patch files (programs). You can toggle search window on by clicking the magnify glass in the middle section of the librarian view. Please note that letter size matters.
+* [New] Resize-able GUI. There are now three different size options available and we hope they work for you. We can not make the plug-in UI too small or too big with current framework, or the graphics will look dodgy as the images are scaled. 
+* [New] Two new section locks added: 1 Section Lock Performance MIDI Channel and 2 Section Lock Performance Output Routing. When locks are on, incoming performance data from hardware will not change the MIDI channel or Output routings of the part. Data is sent back to hardware if locks are on, which might cause a bit waiting, but if you want to keep your outputs and MIDI channels set straight, this is your option. These locks are on by default.
+* [Fixed] Patch Librarian tab program numbers fixed so they start from 000 instead of 001 according to Novation standards.
+
+* [Fixed] Arp Mute status was set to wrong value while recalling data.
+* [Fixed] Arp Gate knob did not work as expected.
+* [Fixed] Vocoder Width value 11 caused SysEx package to split, therefore total recall of the part did not succeed.
+* [Fixed] Multi settings were not processed properly when requesting data to plug-in GUI.
+* [Other] Changed some librarian menu item names to reflect the usage target a bit better.
+
+
