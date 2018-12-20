@@ -1,0 +1,38 @@
+Version 1.0.9 / 2018-11-11
+
+* [New] RESIZE-ABLE GUI. Choose your GUI size from the dropdown list on top of the plug-in GUI and relaunch the DAW or plug-in! Graphics are scaled up or down by 25%, so don't blame us if it does not look neat ;) This is first AID until we update our framework for realtime resizing.
+
+
+Version 1.0.8 / 2018-11-02
+
+* [GUI] Aligned graphical elements.
+* [Other] Improved patch / multi file handling system.
+
+
+Version 1.0.7 / 2018-10-25
+
+* [Other] Changed "Send all MIDI data from Plug-in:" to "Directly to Hardware" by default, since some users with large buffer settings were not able to get notes triggered at all.
+
+
+Version 1.0.6 / 2018-10-24
+
+* [Fixed] Resolved issue where patches were not written to hardware slots even chosen so from the librarian menu.
+
+
+Version 1.0.5 / 2018-10-23
+
+* [Fixed] Resolved issue where 32-bit installers did not work as expected.
+* [Fixed] Resolved issue where plug-in would crash when requesting multis in some cases.
+* [Fixed] Resolved issue where plug-in display was not updated after requesting data from Blofeld.
+* [Fixed] Plug-in display did not show valid percentages on request and data write processes.
+* [Fixed] Aligned some menu items a bit better in the plug-in GUI.
+* [Fixed] Improved data flow from librarian to hardware. New method sends data from librarian to hardware and after that gets data back to plug-in GUI, which will give accurate result in the plug-in GUI parameters.
+
+
+Version 1.0.4 / 2018-09-10
+
+* [New] If user holds down Left Shift button while adjusting MULTI parameters, parameters will be sent out after shift button is released. This is made since Blofeld does not have multi parameters mapped in NRPN, SysEx or CC. Every time Multi parameters are adjusted, the whole multi must be sent to hardware, including parts data. Now if user holds down shift while setting parts 5-16 muted, multi data and data from parts 1-4 will be sent to hardware AFTER shift is released.
+* [Fixed] Adjusted program change commands to work more reliably.
+* [Fixed] When changing program with + / - buttons on different part than what was selected, selected part data was returned from hardware.
+* [Fixed] If program change was disabled on hardware, program changes were enabled via other sources. This has been changed so that if program change for current part is disabled, any program change commands from any source will be ignored.
+* [TIP] if you change programs with + / - buttons found in the mini mixer, program changes will be sent to hardware accordingly, starting from 0. Position in the Patch Librarian does NOT matter, unless "LIBRARY CONTROL ON PROG CHANGE" is active. This is because: we do not know the hardware bank content so it is pointless to follow on librarian view and show different patch names on the mini mixer and different names on the librarian view.
