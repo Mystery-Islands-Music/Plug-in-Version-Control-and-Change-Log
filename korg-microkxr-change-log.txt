@@ -1,6 +1,11 @@
-Version 1.3.2 / 2018-12-20
+Version 1.3.3 / 2018-12-22
 
 [IMPORTANT] This update is not backward compatible below version 1.2.8! We had to change the code function in order to make the total recall with layer selections work as they were stored in the session.
+
+* [New] Implemented librarian search function. This is case sensitive. Search results, if found, are shown in the lower patch list display.
+
+
+Version 1.3.2 / 2018-12-20
 
 * [New] IF layer link switch is toggled on, both layers change their value as expected - Layer 1 is kept open.
 * [Fixed] When switching any of the non-CC or non-LSB/MSB knobs, buttons or menu items sound was completely messed up.
