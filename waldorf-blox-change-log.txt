@@ -1,6 +1,8 @@
-Version 1.0.9 / 2018-11-11
+Version 1.0.9 / 2018-12-26
 
-* [New] RESIZE-ABLE GUI. Choose your GUI size from the dropdown list on top of the plug-in GUI and relaunch the DAW or plug-in! Graphics are scaled up or down by 25%, so don't blame us if it does not look neat ;) This is first AID until we update our framework for realtime resizing.
+* [New] Patch Librarian now includes search function. This is limited to single patch files (programs). You can toggle search window on by clicking the magnify glass in the middle section of the librarian view. Please note that letter size matters.
+* [New] Resize-able GUI. There are now three different size options available and we hope they work for you. We can not make the plug-in UI too small or too big with current framework, or the graphics will look dodgy as the images are scaled.
+* [Fixed] Sending programs and performances works a lot faster now.
 
 
 Version 1.0.8 / 2018-11-02
