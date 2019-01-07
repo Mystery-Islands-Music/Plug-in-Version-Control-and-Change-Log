@@ -1,3 +1,24 @@
+Version 1.0.3 / 2019-01-07
+
+* [Fixed] Resolved issue where 32-bit version of the plug-in was crashing.
+* [Fixed] Resolved issue where plug-in overloaded the RAM while using it.
+* [Fixed] Resolved issue where Performance was "reset" while saving project.
+* [Fixed] Resolved issue where Part Mute, FX Used and Additional Settings buttons were inaccessible from the global | performance tab.
+* [Fixed] Resolved issue where plug-in GUI did not update to according values while changing program with mini mixer up & down buttons.
+* [Fixed] Resolved issue where program Polyphony setting was set wrong in some cases.
+* [Fixed] Sped up the process of sending single programs to hardware.
+* [Fixed] Resolved issue where tempo was not synchronized properly when locking tempo to host value (works best if the hardware clock is set to internal).
+* [Fixed] Resolved issue where Effect Bypass, Pan Sync, Chorus Delay, Chorus LFO Wave, Global Inputs Gain 1 & Gain 2, Comb Filter, Distortion and Reverb NRPN parameters were not changed on the plug-in GUI while moving parameters from the hardware.
+* [Fixed] Resolved issue where LFO Slew, LFO Delay Fade, LFO Delay Type and LFO Delay Sync did not update the plug-in GUI while moving the knobs from the hardware (on both LFO's).
+* [Fixed] Resolved issue where oscillator waveforms did not change in the hardware when clicking from the plug-in GUI.
+* [Fixed] Resolved issue where Master Keyboard switch value was not stored within the project.
+* [Fixed] Resolved issue where Advanced MIDI Filter settings were not recalled with the project.
+* [Fixed] Resolved issue where Portamento values were not recalled once opening the project.
+* [Fixed] Resolved issue where Portamento values were not received when patch was requested from hardware.
+* [Fixed] Librarian entered "non-responsive" state after toggling between librarian <-> any other main tabs while librarian search function or category limit function were active.
+* [Fixed] Program Change buttons work as expected.
+
+
 Version 1.0.2 / 2018-11-23
 
 [NOTE] This version might have issues with backward compatibility - We are very sorry about that, but in order to keep our product updated, this was a mandatory step to take.
