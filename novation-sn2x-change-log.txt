@@ -1,3 +1,11 @@
+Version 1.0.6 / 2019-01-16
+
+* [New] Removed "FX Used" from Performance mixer view and replaced it "ARP Used" toggle switch to control each Parts arpeggiator settings.
+* [Fixed] Resolved issue where Performance ARP toggles were not set right if Performance was sent from plug-in GUI / Librarian to hardware.
+* [Fixed] Resolved issue where requesting Performance from Bank D caused plug-in to crash.
+* [Fixed] Some small random bugs corrected.
+
+
 Version 1.0.5 / 2019-01-10
 
 * [New] Added Multi Part Pan Position and Program Pan Positions to their own layers, which can be seen by toggling between "Use FX from Part / Program" button.
