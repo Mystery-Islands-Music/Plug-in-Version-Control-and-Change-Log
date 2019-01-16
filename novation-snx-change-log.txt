@@ -1,5 +1,31 @@
-Version 1.0.3 / 2019-01-08
+Version 1.0.4 / 2019-01-16
 
+* [New] Added Multi Part Pan Position and Program Pan Positions to their own layers, which can be seen by toggling between "Use FX from Part / Program" button.
+* [New] Updated Performance Mixer view to include Part Polyphony menu.
+* [New] Made a workaround to issue, which occurred when Performance was sent from Librarian to Hardware. Now data is being called back to software GUI after sending it. This method takes a bit time, but it is literally the only way to proceed with Novation formatted performances.
+* [Fixed] Abort Process button did not work properly in Patch Librarian.
+* [Fixed] Resolved issue where Abort Process could potentially crash the plug-in.
+* [Fixed] Resolved issue where Performance ARP toggles were not set right if Performance was sent from plug-in GUI / Librarian to hardware.
+* [Fixed] Resolved issue where requesting Performance from Bank D caused plug-in to crash.
+* [Fixed] Resolved issue where Performance parts polyphony setting was set to MONO if part was actually set to OFF.
+* [Fixed] Resolved issue where RX PC was set to wrong state while receiving Global Data and while dumping Global Data to hardware.
+* [Fixed] Removed function which made a performance request on hardware when midi channel change message was received.
+* [Fixed] Resolved issue where Receive Program changes was recalled wrong.
+* [Fixed] Resolved issue where Multi Part Panning Type was not set correctly in either way.
+* [Fixed] Resolved issue where Multi Part Panning Position was not set correctly in either way.
+* [Fixed] Resolved issue where Multi Part Chorus Send value was not recalled properly.
+* [Fixed] Resolved issue where Requesting Single Performances did not work.
+* [Fixed] Resolved issue where plug-in crashed while renaming Performance.
+* [Fixed] Resolved issue where Part 8 was not receiving control changes as expected.
+* [Fixed] Resolved issue where TXPC and TXCC were working the opposite way.
+* [Fixed] Resolved odd Novation bug in Program / Performance names: If Program or Performance was renamed, it was not adding the standard 0x20 byte to represent empty space. Now plug-in knows the odd byte and transforms it to regular empty space instead.
+* [Fixed] Part MIDI channels now appear in full scale from channel 1 to Omni.
+* [Fixed] Some minor bugs corrected.
+
+
+Version 1.0.3 rev 2 / 2019-01-08
+
+* [Fixed] Assigned rest of the parameters to their respected areas in the Automation Lists.
 * [Fixed] Resolved issue where 32-bit version of the plug-in was crashing.
 * [Fixed] Resolved issue where plug-in overloaded the RAM while using it.
 * [Fixed] Resolved issue where plug-in GUI did not update to according values while changing program with mini mixer up & down buttons.

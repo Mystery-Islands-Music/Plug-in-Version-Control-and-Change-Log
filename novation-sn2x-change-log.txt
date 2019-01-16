@@ -1,3 +1,11 @@
+Version 1.0.7 / 2019-01-16
+
+* [Fixed] Part Polyphony menus were shown as Part Transpose items in the plugin.
+* [Fixed] Abort Process button did not work properly in Patch Librarian.
+* [Fixed] Requesting Performances did not work as expected on Bank A.
+* [Fixed] Resolved issue where Abort Process could potentially crash the plug-in.
+* [Fixed] Some minor bugs corrected.
+
 Version 1.0.6 / 2019-01-16
 
 * [New] Removed "FX Used" from Performance mixer view and replaced it "ARP Used" toggle switch to control each Parts arpeggiator settings.
