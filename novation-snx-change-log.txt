@@ -1,3 +1,9 @@
+Version 1.0.5 / 2019-01-19
+
+* [New] Added additional display to show progress of patches / performances received or written, ie: 15/128
+* [Fixed] Resolved issue which caused plug-in to crash when attempted to write whole bank in to hardware.
+* [Fixed] Resolved issue where Part 5/7 & 6/8 Polyphony setting adjusted wrong part.
+
 Version 1.0.4 / 2019-01-16
 
 * [New] Added Multi Part Pan Position and Program Pan Positions to their own layers, which can be seen by toggling between "Use FX from Part / Program" button.
