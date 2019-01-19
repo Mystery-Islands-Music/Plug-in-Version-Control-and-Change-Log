@@ -1,3 +1,11 @@
+Version 1.0.8 / 2019-01-19
+
+* [Fixed] Resolved issue where Arp Bank and Arp Program selections did not work as expected.
+* [Fixed] Resolved issue which caused plug-in to crash when attempted to write whole bank in to hardware.
+* [Fixed] Resolved issue where Part 5/7 & 6/8 Polyphony setting adjusted wrong part.
+* [Fixed] Resolved issue where hardware clock was set to Auto when recalling project.
+* [Fixed] Resolved issue where Bypass Effect was not recalled when effect was used from part.
+
 Version 1.0.7 / 2019-01-16
 
 * [Fixed] Part Polyphony menus were shown as Part Transpose items in the plugin.
