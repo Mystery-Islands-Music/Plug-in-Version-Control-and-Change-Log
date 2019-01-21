@@ -1,3 +1,7 @@
+Version 1.0.6 / 2019-01-21
+
+* [Fixed] Requesting data from HW did not work under certain conditions.
+
 Version 1.0.5 / 2019-01-19
 
 * [New] Added additional display to show progress of patches / performances received or written, ie: 15/128
