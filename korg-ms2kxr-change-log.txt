@@ -1,0 +1,52 @@
+Version 2.0.0 beta / 2019-01-24
+
+[IMPORTANT] This update is not backward compatible below version 2.0.0!
+
+* [New] New GUI look. User can choose between normal skin or black skin. Plug-in re-initialization required in order to see changes.
+* [New] Resizeable GUI. User can choose between normal, 75% or 125% scaling for the Plug-in GUI. Plug-in re-initialization required in order to see changes.
+* [New] Randomizer. Yes – user can now randomize programs. Randomizer button is below the main screen. If section locks are active, those parts of the sound are not randomized.
+* [New] Multi level folder support for patches.
+* [New] Advanced MIDI filters included. This can be accessed from Global Settings -> Advanced MIDI Settings under the plug-in display.
+* [New] User preset data and license.key should be now placed to Documents/Mystery Islands Music/Korg MS2KxR Editor/ folder.
+* [New] Whole plug-in framework redesigned from ground up. Please report any bugs or malfunctions to our forums - Thank you!
+
+Version 1.0.9 / 2016-04-23
+
+* [Fixed] Sometimes wrong layers were displayed after recalling a project.
+* [New] Request current patch data from plugin UI to librarian.
+
+Version 1.0.8 / 2016-04-19
+
+* [Update] Updated graphics for various knobs, switches and layers.
+* [Update] Improved patch list refreshing after discarding or saving patch data.
+* [Update] Changed sysex knobs and switches to NRPN format to prevent peaks in processor usage.
+* [Fixed] Decreased memory load by 1000%.
+* [New] Added settings tab and it’s controls.
+* [New] Added menus for MIDI1 and MIDI2 controllers in settings page.
+* [New] Added velocity curve menu in settings page.
+* [New] Added function that sends global data to hardware when leaving settings page.
+* [New] Added Tempo lock switch to prevent tempo change up on preset change.
+* [New] Added vibrato int knob in main window.
+* [New] Added bend range menu in main window.
+* [New] Added timbre transpose knob in main window.
+* [New] Added timbre tuning knob in main window.
+* [New] When in edit mode, knobs send SysEx commands from hardware to UI and now changes values correspondingly in software UI.
+* [New] Timbre 1 and timbre 2 MIDI channel lock switches added to prevent midi channel changes up on preset load.
+* [New] Load to timbre 1 and load to timbre 2 / load from timbre 1 and load from timbre 2 switches added to librarian page so we can choose which timbre data we send from librarian files to hardware timbres of users choice.
+* [New] Patches can be changed via arrow keys in librarian window while the mouse is over the banks patch names.
+* [New] Storing patch data to HDD is now possible.
+* [New] Reading Korg MS2000 format data added as well as our own bank data.
+* [New] Added save button in librarian to overwrite currently edited bank.
+* [New] Librarian can now receive and map all patch data from hardware to corresponding patch slots.
+
+Version 1.0.3 / 2016-02-27
+
+* [Fixed] All patches are now scrollable via the librarian (please note that midi channel must match to hear the sound – fix coming up next week).
+* [Fixed] Filter KBD Track didn’t work as expected.
+* [Fixed] Filter Velocity didn’t work as expected.
+* [Fixed] Amp KBD Track didn’t work as expected.
+* [Fixed] Amp Velocity didn’t work as expected.
+* [Fixed] Library control from MIDI works as expected.
+* [Added] Plugin can now pass DAW MIDI clock messages.
+* [Update] Minor update to main graphics to please the eye a bit more.
+* [Update] MIDI data handling has been improved and CPU does not peak up on control change / program change.
