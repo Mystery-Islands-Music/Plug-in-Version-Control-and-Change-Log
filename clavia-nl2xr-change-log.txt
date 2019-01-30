@@ -1,0 +1,127 @@
+Version 2.0.4 / 2019-01-30
+
+* [New] Resize-able GUI. User can now make the GUI smaller or bigger. This is using scaling method at the moment, so the quality might not be the best, but it fits on most of the screens.
+* [New] Advanced MIDI Filters page added. User can now filter MIDI messages from DAW or Hardware ports. Button to Advanced MIDI Settings -> Performance Settings tab.
+* [New] Experimental MIDI clock generator added. This is not accurate by all means, we just want to see how it works out! If it is decent, we will keep it in.
+* [New] All Sounds off message is sent to dedicated slot or all slots if needed.
+* [Fixed] Resolved issue where popup menu for program selection crashed DAW if none was selected.
+* [Fixed] Solo switch now sends full arrangement data to Nord where other channels are set to OFF stage.
+* [Fixed] Some small changes to control display to avoid displaying values for parameters which do not have name in it. This caused crash in some cases.
+* [Fixed] Plugin validation should work without hick-ups.
+* [Fixed] Plugin memory usage reduced -> Faster load time.
+* [Fixed] Data request or write cancel works as expected.
+* [Fixed] Save As ... and Overwrite works as expected.
+* [Fixed] Resolved issue where program names from librarian was shown in the program dropdown menu when plug-in was launched.
+* [Fixed] Resolved issue where Global MIDI channel was set to 16 when plug-in was launched.
+* [Fixed] Resolved issue where Performance program number was stuck in 0 when selecting performances from performance dropdown menu.
+* [Fixed] Resolved issue where bank selection was reset after clicking Overwrite.
+* [Fixed] Resolved issue where wrong layer was shown in the plug-in GUI when clicking performance settings tab on / off.
+* [Fixed] Bank names are now sorted Alphabetically up on folder scanning. Note that if bank name has capitals in it, they are threatened with higher priority.
+* [Fixed] Various other issues.
+
+
+Version 2.0.3 / 2018-03-01
+
+* [New] About window added.
+* [New] First Run splash window. Quick instructions to user how to wire the hardware.
+* [New] Default banks are now in NL2 format, so the preset names won’t vanish when overwriting NL2 formatted bank.
+* [New] Windows installer now attempts to install in VSTPlugins/Mystery Islands Music.
+* [New] If plug-in is in performance browsing mode, regular patch request and storing functions are hidden from bank edit menu.
+* [New] If plug-in is in patch browsing mode, regular performance request and storing functions are hidden from bank edit menu.
+* [New] Added isDawRunning function in the core to check DAW status. This prevents automation from showing up on plug-in display from other than selected slot.
+* [New] Patches are now called Programs. All single programs will be stored to /User/Documents/Mystery Islands Music/Clavia NL2xR Editor/Programs/ folder.
+* [New] Performances are now stored to /User/Documents/Mystery Islands Music/Clavia NL2xR Editor/Performances/ folder.
+* [New] Program and Performance Request and Store commands moved to Bank Edit Menu and the old drop down selection menu is removed from the librarian view.
+* [Fixed] When Total Recall did not work or MIDI interface was not present, user had to reselect the MIDI I/O. This caused issue, where currently active data was requested from Nord and it overwrote the current Performance data from Plug-in.
+* [Fixed] Adjusted timeOut functions a bit further to prevent false timeOut messages.
+* [Fixed] AllSoundsOff now works as expected.
+* [Fixed] Data mode buttons now grey out when data is received to librarian.
+* [Fixed] Bank overwrite works as expected.
+* [Fixed] Part LEDs work as expected when notes or control change data is detected.
+* [Fixed] Global MIDI channel changed its value while browsing through patches from librarian.
+* [Fixed] Cancel Request button did not appear in the librarian view as it should while request process was on.
+* [Fixed] Unwanted parameters won’t display their values in controlDisplay.
+* [Fixed] Timeout and plug-in crashing the daw issues resolved while setting MIDI i/o or while requesting data from hardware.
+* [Fixed] Bank and program displays did not update while changing mode from Single to Performance.
+* [Other] Changed the way how renaming was applied to empty spaces in patch name.
+* [Other] Included NL2xR Editor UI.txt for future purposes.
+
+
+Version 2.0.1 / 2017-11-04
+
+* [Fixed] When disabling or enabling slots, cancel button appeared on the user interface.
+* [Fixed] Bank selection did not work properly when choosing different slot.
+* [Fixed] Made additional checks to incoming data packages.
+* [Fixed] When data was requested from the synth, data signal LEDs were all lit up.
+* [Fixed] Crashing on certain platforms when trying to rename slot patch name on main user interface.
+* [Fixed] Crashing on certain platforms when trying to rename performance name on main user interface.
+* [Fixed] When layer link was active, only one led was lit on control action.
+* [Fixed] When using up/down or left/right keys in the librarian, selection jumped out wild.
+* [Fixed] PC installers are now actually 64-bit and not 32-bit as it used to be.
+* [Tuning] Changed incoming MIDI indicator led colour to Yellow.
+
+
+Version 2.0.0 / 2017-10-25
+
+* [New] Completely new User Interface, following up our new guidelines. Plug-in user interface size is now 1500×667 pixels, so make sure that your display range is good before updating!
+* [New] Nord Lead and Nord Rack 1st generation integration has been completed. Some errors may occur, but we are fixing them as they occur.
+* [New] Completely reworked Librarian and its functions. Copy and Paste, Drag’n’Drop and requests work as expected. Save As Standard MIDI saves the bank in Standard MIDI specifications.
+* [New] Global Lock – This locks the MIDI channels per slot and other performance settings which are not single patch settings. If Global Lock is on, performances clicked through the librarian will be sent to hardware so that it picks up the user interface settings along. This ensures the MIDI channels and other settings are intact. Releasing Global Lock sends the data as is.
+* [New] Randomizer – User can now randomize the Currently selected SLOT by clicking the randomizer button. If section locks are active, these parameters will not be affected by the randomizer.
+* [New] Global Link Channel – This is the regular DeviceID / Global MIDI channel of the Nord, but once notes or controllers are sent to plug-in at this channel, it will be distributed across all slots.
+* [New] Solo slots – This button works if data is triggered via the Global Link / MIDI channel so user can listen to individual channels while making a massive layered sound.
+* [New] Graphics for Nord 1st generation models. Once the model is chosen from the top left corner, user interface will change to display corresponding settings of the 1st generation Nord Leads / Nord Racks.
+* [New] Section locks are now extended to Velo/Morph areas as well.
+* [New] MIDI input stage leds. Once MIDI is triggered from a channel that is present on a slot, the slot LED will blink indicating where the data came and goes to.
+* [New] Program number display now shows programs in segments of 1-10, 11-20 etc. The program names will be picked up from librarian if librarian control is toggled.
+* [New] Data location has been moved over to /User/Documents/Mystery Islands Music/Clavia NL2xR Editor/ – license.key and Patches folder will be located here. Install first the new version and then move over the license.key & presets.
+* [Important] This version is not backward compatible with the v1.x.x. It is very important that you make a backup of your project, open the project with old plug-in instance in use -> send data to hardware -> store the performance in hardware -> install new plug-in version and request data from Hardware to continue where you were left off.
+* [Important] Plug-in license.key should be copied manually to folder mentioned above or via Librarian -> Bank Edit menu -> Register plug-in… if the display indicates “Reload License”.
+* [Note] Librarian view has been updated so user can choose a slot from the librarian view when selecting new presets. Drag and drop works now so that user can drag patches from bottom list to upper list.
+
+
+Version 1.1.0 / 2016-09-12
+
+* [New] Plugin up/down patch buttons now follow the plugin UI display program number value. Ie: If slot A has program 0.10 chosen by up key, and you move to slot B where program number is 3.41, up / down buttons know the current program and will continue from there.
+* [Fixed] After performance / patch was received by hardware program change, some controls were grayed out.
+* [Fixed] Librarian did not save the renamed performances properly.
+* [Fixed] In some cases, when patches were copy / pasted or drag’n’dropped to the left list, these patches were ”initialized” after initializing a different slot from the bank.
+* [Fixed] When choosing MIDI in/out from the plugin UI, the plugin display said ”choose MIDI I/O first”.
+* [Fixed] In performance mode, some times the performances were not changed from the plugin UI display accordingly.
+* [Addon] Improved some instructions in the main manual regarding to Discard button found in Librarian.
+
+
+Version 1.0.5 / 2016-07-04
+
+* [New] Control Link added. Controls can be linked if SLOT MIDI channels are set to same value. All four slots can be linked together.
+* [New] Librarian now includes Copy & Paste functions. User can now copy patch / performance data from right list to and paste to left list. Function can be displayed by clicking right mouse button on top of librarian patch.
+* [New] Librarian now includes Initialization function. User can now initialize patch / performance. Function can be located by clicking right mouse button on top of librarian patch.
+* [New] Librarian now included Request function from new librarian slot edit menu. Functions can be found by clicking right mouse button on top of librarian patch.
+* [Fixed] Some of the librarian buttons didn’t gray out after requesting data to librarian from hardware.
+* [Fixed] Librarian caused fatal crashes when renaming was triggered after patches were requested & drag’n’dropped into the librarian.
+
+
+Version 1.0.4 / 2016-07-01
+
+* [Fixed] Librarian now sends single patch data to proper slot accordingly.
+* [Fixed] After file is saved as, the newly created file will be selected in the list at librarian.
+* [Fixed] When renaming of patch was triggered, wrong patch name was displayed in patch name dialog.
+* [Fixed] Patch names are now aligned to left in librarian window.
+* [Fixed] Slot MIDI channels were not called in properly when plugin was initialized.
+
+
+Version 1.0.3 / 2016-06-20
+
+* [New] Section Locks added. Now users are able to lock sectain sections of the plugin to keep their favorite values / settings while scrolling though patches. Section Lock does not work while changing Performances.
+* [Fixed] In some situations, patch / performance number and bank number displays were shown on top of librarian window.
+* [Update] Display, librarian and dropdown fonts re-defined. No more overlapping text entries.
+* [Update] When requesting performances or patches, ”processing…” text now flickrs to display user there is a process on going.
+* [Update] When model is chosen as Nord Lead 2X , global midi channel is set to 16. In other model selections, global midi channel reverts to 5.
+
+
+Version 1.0.2 / 2016-06-17
+
+* [New] User is now able to Import Nord Lead MIDI & System Exclusive banks to Librarian from librarian.
+* [Fixed] In some scenarios, the ”Allow Part Change” led did not turn off even though the button was pressed.
+* [Fixed] Bank and Program numbers now update accordingly to the same values as in hardware when requesting performance data.
+* [Core] Other minor tweaks for the plugin core.
