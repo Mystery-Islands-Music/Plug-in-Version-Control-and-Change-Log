@@ -1,3 +1,8 @@
+Version 2.0.5 / 2019-01-30
+
+* [Fixed] Nord Lead 1 / Nord Rack 1 integration fixes.
+
+
 Version 2.0.4 / 2019-01-30
 
 * [New] Resize-able GUI. User can now make the GUI smaller or bigger. This is using scaling method at the moment, so the quality might not be the best, but it fits on most of the screens.
