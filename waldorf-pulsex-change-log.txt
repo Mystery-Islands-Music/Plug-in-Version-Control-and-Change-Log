@@ -1,3 +1,13 @@
+Version 1.0.1 / 2019-02-20
+
+* [New] Importing Pulse 2 sounds has been improved. Now if slots 1-8 has destination set to Pitch, first match will be addressed to Pitch Mod slot in the plug-in. Same applies to Filter Mod, if destination is set to Cutoff. If these two matches are found from slots 1-4, they will be occupied from first used slot data from slots 5-8.
+* [New] Right click menu has been reworked. User can now set category per patch by right click -> set category. User can now request current patch from plug-in interface to librarian. Keep in mind, that you still have to overwrite the bank or choose save as..
+* [New] Librarian window now shows currently selected librarian patch category when clicking the item.
+* [Fixed] Filter Mod Source and Filter Mod Amount values were sent and received the wrong way due to mismatch in original SysEx documentation.
+* [Fixed] Resolved issue where Oscillator 1, 2 and 3 Semitones changed the entire patch in some cases.
+* [Other] Reworked entire menu-system code. Now using ~720 lines of code instead ~14 000 lines.
+
+
 Version 1.0.0 BETA / 2019-02-07
 
 * Initial BETA release.
