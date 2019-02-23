@@ -1,3 +1,8 @@
+Version 1.0.2 / 2019-02-22
+
+* [Fixed] Resolved issue where default program names were not applied to some presets when file was selected in librarian.
+
+
 Version 1.0.1 / 2019-02-20
 
 * [New] Importing Pulse 2 sounds has been improved. Now if slots 1-8 has destination set to Pitch, first match will be addressed to Pitch Mod slot in the plug-in. Same applies to Filter Mod, if destination is set to Cutoff. If these two matches are found from slots 1-4, they will be occupied from first used slot data from slots 5-8.
