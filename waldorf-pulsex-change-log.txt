@@ -1,3 +1,8 @@
+Version 1.0.3 / 2019-03-25
+
+* [Fixed] Resolved issue where total recall did not work in some cases.
+
+
 Version 1.0.2 / 2019-02-22
 
 * [Fixed] Resolved issue where default program names were not applied to some presets when file was selected in librarian.
