@@ -1,5 +1,7 @@
-Version 1.0.3 / 2019-03-25
+Version 1.0.3 / 2019-03-26
 
+* [New] Section locks added and they are now fully functional.
+* [Fixed] Resolved issue where plug-in crashed when clicking "randomize".
 * [Fixed] Resolved issue where total recall did not work in some cases.
 
 
