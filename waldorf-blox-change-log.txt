@@ -1,3 +1,16 @@
+Version 1.1.1 / 2019-05-06
+
+* [New] License SL supported on Oscillator shapes. Renaming User Wavetables is not possible yet.
+* [Fixed] Reduced RAM consumption size.
+* [Other] Framework updates to make everything work smoother.
+* [Other] Connections to hardware work better now when initializing the plug-in.
+
+
+Version 1.1.0 / 2018-12-27
+
+* [Fixed] Librarian entered "non-responsive" state after toggling between librarian <-> any other main tabs while librarian search function or category limit function were active.
+
+
 Version 1.0.9 / 2018-12-26
 
 * [New] Patch Librarian now includes search function. This is limited to single patch files (programs). You can toggle search window on by clicking the magnify glass in the middle section of the librarian view. Please note that letter size matters.

@@ -1,3 +1,9 @@
+Version 1.0.4 / 2019-05-06
+
+* [Other] Framework updates to make everything work smoother.
+* [Other] Connections to hardware work better now when initializing the plug-in.
+
+
 Version 1.0.3 / 2019-03-26
 
 * [New] Section locks added and they are now fully functional.
