@@ -1,3 +1,18 @@
+Version 2.0.6 / 2019-05-13
+
+* [New] Program Number and Bank Number displays now show up a librarian bank / program menu, if Library Control is toggled on.
+* [New] Right click menu in Librarian window will now show where the data will be requested from based on the currently selected slot, ie. Request Temp data from Slot A.
+* [Fixed] Nord Lead 2X / Nord Rack 2X integration fixes.
+* [Fixed] Resolved issue where plug-in changed parts up on certain parameter changes.
+* [Fixed] Resolved issue where plug-in crashed when clicking "randomize".
+* [Fixed] Resolved issue where total recall did not work in some cases.
+* [Fixed] Resolved issue where search field was shown in Performance mode. Search is only compatible in Program mode.
+* [Fixed] Resolved issue where Mod Wheel knob & value did not change in the plug-in GUI while using mod wheel from external controller.
+* [Other] Framework updates to make everything work smoother.
+* [Other] Connections to hardware work better now when initializing the plug-in.
+* [Other] Reworked entire menu-system code. Now using ~720 lines of code instead ~14 000 lines.
+
+
 Version 2.0.5 / 2019-01-30
 
 * [Fixed] Nord Lead 1 / Nord Rack 1 integration fixes.
