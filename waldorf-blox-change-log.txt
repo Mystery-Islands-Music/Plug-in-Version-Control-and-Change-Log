@@ -1,3 +1,9 @@
+Version 1.1.2 / 2019-05-15
+
+* [Fixed] Resolved issue where graphics resize did not work as expected. Reload the project or plug-in in order the see skin and user interface size changes.
+* [Fixed] Resolved issue where performance dropdown menu did not behave as expected while librarian window was active.
+
+
 Version 1.1.1 / 2019-05-06
 
 * [New] License SL supported on Oscillator shapes. Renaming User Wavetables is not possible yet.
