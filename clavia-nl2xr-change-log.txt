@@ -1,3 +1,8 @@
+Version 2.0.7 / 2019-05-15
+
+* [Fixed] Resolved issue where graphics resize did not work as expected. Reload the project or plug-in in order the see skin and user interface size changes.
+
+
 Version 2.0.6 / 2019-05-13
 
 * [New] Program Number and Bank Number displays now show up a librarian bank / program menu, if Library Control is toggled on.
