@@ -1,3 +1,8 @@
+Version 1.0.5 / 2019-05-14
+
+* [Fixed] Resolved issue where graphics resize did not work as expected. Reload the project or plug-in in order the see skin and user interface size changes.
+
+
 Version 1.0.4 / 2019-05-06
 
 * [Other] Framework updates to make everything work smoother.
