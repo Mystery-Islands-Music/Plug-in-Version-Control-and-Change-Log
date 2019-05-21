@@ -1,3 +1,12 @@
+Version 1.1.3 / 2019-05-21
+
+* [Fixed] Resolved issue where Single Banks, Multi Banks, Category Files and Search items created multiple duplicates to menus when saving a new bank.
+* [Fixed] Resolved issue which caused errors while storing bank with Save As.
+* [Fixed] Adjusted delay of data transmission on total recall.
+* [Fixed] Resolved issue where search result entries where shown in lower bank selection menu after toggling off search function.
+* [Fixed] Resolved issue where tab content did not update to new parameter values while clicking previous / next patch buttons on the left hand side mini mixer area.
+
+
 Version 1.1.2 / 2019-05-15
 
 * [Fixed] Resolved issue where graphics resize did not work as expected. Reload the project or plug-in in order the see skin and user interface size changes.
