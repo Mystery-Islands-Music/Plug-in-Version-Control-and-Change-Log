@@ -1,3 +1,8 @@
+Version 1.0.7 / 2019-05-22
+
+* [Fixed] Resolved issue where patch sounds different after total recall. This bug is due to Pulse internal coding, but we found a work-around!
+
+
 Version 1.0.6 / 2019-05-21
 
 * [Fixed] Resolved issue where Single Banks, Category Files and Search items created multiple duplicates to menus when saving a new bank.
