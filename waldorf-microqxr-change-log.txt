@@ -1,0 +1,10 @@
+Version 1.0.0 / 2018-01-28
+
+* [Fixed] Fixed all multi and all single patch request methods.
+* [Fixed] Included proper MIDI header data to Save As and Overwrite methods.
+* [Update] New approach to splitting huge MIDI file to smaller ones so librarian can read them.
+
+
+Version 0.9.8 RC1 / 2017-11-24
+
+* Release Candidate 1
