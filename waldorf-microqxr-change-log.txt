@@ -1,3 +1,24 @@
+Version 1.0.1 / 2019-06-20
+
+* [Fixed] Resolved issue where filter link switch did not display value on other than part 1.
+* [Fixed] Resolved issue where filter link trigger overdrove control display on other than part 1.
+* [Fixed] Resolved issue where SysEx files were not recognized as Q or Blofeld patches when scanning folders.
+* [Fixed] Resolved issue where patch up and down buttons did not work as expected in mini-mixer view.
+* [Fixed] Resolved issue where some menu items did not update accordingly.
+* [New] Resizable GUI. Choose GUI scaling ratio from the drop down menu and re-load the plug-in or project to see the changes.
+* [New] Librarian Search. User can now search through patches in Patch Librarian view.
+* [New] Patch & Bank conflict warning system. This means that when ever parts share same bank & program number info, it will warn the user of such action. This function is great when data is being recalled to synth since it would overwrite the buffer with another parts data.
+* [New] Bank and Patch Number display. Browse hardware banks / patches OR Librarian banks / patches from the main UI.
+* [New] Browse Banks and Patches from Plug-in GUI without entering Librarian view. If Library Control is toggled on, user can browse banks and patches of librarian without having to enter the librarian itself.
+* [New] Saving mechanism update for GUI data to librarian has been improved. Now there is a single button in Librarian view to store GUI data on currently selected slot of Librarian view. User still has to Overwrite the bank or Save As under a new bank name for safety measure.
+* [New] Browse Patches sorted by Category in Patch Librarian.
+* [New] Multi level subfolder support for Patch Librarian.
+* [New] Improved MIDI and SysEx handling.
+* [New] Advanced MIDI filters.
+* [Update] Improved Link Manager.
+* [Update] Fix for Filter Link switch on recall.
+
+
 Version 1.0.0 / 2018-01-28
 
 * [Fixed] Fixed all multi and all single patch request methods.
