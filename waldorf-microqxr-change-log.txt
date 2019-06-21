@@ -1,3 +1,8 @@
+Version 1.0.2 / 2019-06-21
+
+* [Fixed] Resolved issue where control display color was set to black on blue UI skin selection.
+
+
 Version 1.0.1 / 2019-06-20
 
 * [Fixed] Resolved issue where filter link switch did not display value on other than part 1.
