@@ -1,3 +1,13 @@
+Version 1.1.4 / 2019-06-21
+
+* [New] Patch & Bank conflict warning system. This means that when ever parts share same bank & program number info, it will warn the user of such action. This function is great when data is being recalled to synth since it would overwrite the buffer with another parts data.
+* [New] Bank and Patch Number display. Browse hardware banks / patches OR Librarian banks / patches from the main UI.
+* [New] Browse Banks and Patches from Plug-in GUI without entering Librarian view. If Library Control is toggled on, user can browse banks and patches of librarian without having to enter the librarian itself.
+* [New] Saving mechanism update for GUI data to librarian has been improved. Now there is a single button in Librarian view to store GUI data on currently selected slot of Librarian view. User still has to Overwrite the bank or Save As under a new bank name for safety measure.
+* [Fixed] Resolved issue where some parameters did not work as expected.
+* [Fixed] Resolved issue where some menu items did not update accordingly.
+
+
 Version 1.1.3 / 2019-05-21
 
 * [Fixed] Resolved issue where Single Banks, Multi Banks, Category Files and Search items created multiple duplicates to menus when saving a new bank.
