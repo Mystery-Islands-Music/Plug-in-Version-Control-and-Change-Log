@@ -1,3 +1,18 @@
+Version 2.1.2 / 2019-06-25
+
+* [Fixed] Resolved issue where Performance and Program data was corrupted IF any of the Velo/Morph knobs were set to maximum level.
+* [Fixed] Resolved issue where Global MIDI Channel was changed when browsing Performances from Librarian.
+* [Fixed] Reworked initialization procedure so that it sets the Global MIDI channel properly to initialized data.
+* [Fixed] Resolved issue where Cancel Request button appeared in wrong place while UI scaling was set to 0.75 or at 1.25.
+* [Fixed] Resolved issue where Cancel Request button did not behave as expected.
+* [Other] Changed default MIDI routing to "Directly to hardware" instead "With attempt to match DAW buffer setting".
+
+
+Version 2.1.1 / release included with v2.1.2
+
+* [Fixed] Resolved issue where regular Nord sound bank import did not work as expected. Now normal Nord standard banks are shown in the Patch Librarian.
+
+
 Version 2.1.0 / 2019-06-22
 
 * [New] Default MIDI input and MIDI Outputs are stored in NL2xR Editor UI.txt when setting MIDI I/O. These defaults will be applied to all new instances.
