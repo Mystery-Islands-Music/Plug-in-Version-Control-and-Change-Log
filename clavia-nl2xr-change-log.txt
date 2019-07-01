@@ -1,3 +1,11 @@
+Version 2.1.3 / 2019-07-01
+
+* [New] Quick Save function. On Librarian, user can store current slot data (in Librarian Program mode) to current Librarian slot with "Save Data to Slot" button. This also works while Librarian View is set to Performance, when the entire Performance is stored to librarian slot.
+* [Fixed] Resolved issue where Librarian View button was grayed out even when the bank save or discard was triggered.
+* [Fixed] Fine tuned menu entries on Bank Edit menu and Right Click menus in Librarian to match the names of functions between each others.
+* [Other] Altered some button colors in Librarian to draw in more attention.
+
+
 Version 2.1.2 / 2019-06-25
 
 * [Fixed] Resolved issue where Performance and Program data was corrupted IF any of the Velo/Morph knobs were set to maximum level.
