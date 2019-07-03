@@ -1,3 +1,14 @@
+Version 1.1.5 / 2019-07-03
+
+* [Fixed] Resolved issues where plug-in caused Ableton Live to crash when "Send Continuous MIDI Clock Information" was toggled on at Advanced MIDI Settings page.
+* [Fixed] Oscillator wavetables did not load properly on recall or while sending data from librarian to hardware.
+NOTE: If user uploads wavetables via SPECTRE Application to Blofeld, these wavetables are not being requested nor transmitted by bloX Editor.
+* [Fixed] Patches did not load properly to Blofeld while sending from librarian / during total recall / on program change.
+* [Fixed] Multimode parameters did not work as expected.
+* [Other] Multimode Level has been changed from CC#7 back to Blofeld SysEx since the CC level has a different function and could end up resulting the output level being too low.
+* [Other] Improved element alignment and font colors on different skin themes.
+
+
 Version 1.1.4 / 2019-06-21
 
 * [New] Patch & Bank conflict warning system. This means that when ever parts share same bank & program number info, it will warn the user of such action. This function is great when data is being recalled to synth since it would overwrite the buffer with another parts data.
