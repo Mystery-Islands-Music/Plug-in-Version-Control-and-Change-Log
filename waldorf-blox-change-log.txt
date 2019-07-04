@@ -1,3 +1,9 @@
+Version 1.1.6 / 2019-07-04
+
+* [New] User sample scrolling included. This now works in two ways, if user scrolls through samples in Blofeld hardware, software will reflect the changed in UI and vice versa. This also works with total recall and librarian presets supporting samples as oscillators. Samples must be transmitted to Blofeld with Waldorf SPECTRE.
+NOTE: If user wants to have sample names being shown in the plug-in UI, place "bloX Editor Samples.txt" in "Documents/Mystery Islands Music/Waldorf bloX Editor/" folder.
+
+
 Version 1.1.5 / 2019-07-03
 
 * [Fixed] Resolved issues where plug-in caused Ableton Live to crash when "Send Continuous MIDI Clock Information" was toggled on at Advanced MIDI Settings page.
