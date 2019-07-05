@@ -1,3 +1,13 @@
+Version 1.0.3 / 2019-07-05
+
+* [Fixed] Resolved issue where Checksum was not properly calculated for outgoing data.
+* [Fixed] Resolved issue where Experimental MIDI Clock crashed Ableton Live.
+* [Fixed] Resolved issue where "Abort Process" button was not responding while requesting patches / multi data from microQ.
+* [Fixed] Resolved issue where Tempo was not properly synced to DAW tempo.
+* [Fixed] Resolved issue where MIDI clock data was not accurate when clock was turned on at Advanced MIDI Settings page.
+* [Other] Some minor graphical updates, which you might not note...
+
+
 Version 1.0.2 / 2019-06-21
 
 * [Fixed] Resolved issue where control display color was set to black on blue UI skin selection.
