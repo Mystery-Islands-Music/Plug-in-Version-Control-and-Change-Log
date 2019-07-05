@@ -1,3 +1,9 @@
+Version 2.1.4 / 2019-07-05
+
+* [Fixed] Resolved issue where Experimental MIDI Clock crashed Ableton Live.
+* [Other] Some minor graphical updates, which you might not note...
+
+
 Version 2.1.3 / 2019-07-01
 
 * [New] Quick Save function. On Librarian, user can store current slot data (in Librarian Program mode) to current Librarian slot with "Save Data to Slot" button. This also works while Librarian View is set to Performance, when the entire Performance is stored to librarian slot.
