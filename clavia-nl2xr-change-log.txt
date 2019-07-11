@@ -1,3 +1,10 @@
+Version 2.1.5 / 2019-07-11
+
+* [New] Auto-save MIDI I/O. MIDI input and output are stored into text file when they are initially set. Next time the plug-in is inserted, these ports will be recalled and global data will be requested from the hardware.
+* [Fixed] Plug-in will no longer crash when clicking "save part to slot" in librarian.
+* [Other] "save data to slot" button is not lit when lower patch selection list is active in librarian.
+
+
 Version 2.1.4 / 2019-07-05
 
 * [Fixed] Resolved issue where Experimental MIDI Clock crashed Ableton Live.
