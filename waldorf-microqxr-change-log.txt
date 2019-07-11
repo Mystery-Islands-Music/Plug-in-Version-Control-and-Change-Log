@@ -1,3 +1,10 @@
+Version 1.0.4 / 2019-07-11
+
+* [New] If MIDI I/O is auto set from previous session, plug-in will auto request global data to establish the connection with right global settings.
+* [Fixed] Plug-in will no longer crash when clicking "save part to slot" in librarian.
+* [Other] "save data to slot" button is not lit when lower patch selection list is active in librarian.
+
+
 Version 1.0.3 / 2019-07-05
 
 * [Fixed] Resolved issue where Checksum was not properly calculated for outgoing data.
