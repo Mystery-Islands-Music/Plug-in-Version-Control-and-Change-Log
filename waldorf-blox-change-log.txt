@@ -1,3 +1,11 @@
+Version 1.1.7 / 2019-07-11
+
+* [New] If MIDI I/O is auto set from previous session, plug-in will auto request global data to establish the connection with right global settings.
+* [Fixed] Plug-in will no longer crash when clicking "save part to slot" in librarian.
+* [Other] "save data to slot" button is not lit when lower patch selection list is active in librarian.
+* [Other] Some minor graphical updates, which you might not note...
+
+
 Version 1.1.6 / 2019-07-04
 
 * [New] User sample scrolling included. This now works in two ways, if user scrolls through samples in Blofeld hardware, software will reflect the changed in UI and vice versa. This also works with total recall and librarian presets supporting samples as oscillators. Samples must be transmitted to Blofeld with Waldorf SPECTRE.
