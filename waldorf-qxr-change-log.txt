@@ -1,0 +1,86 @@
+Version 1.0.4 / 2019-07-16
+
+* [New] Resizable GUI. Choose GUI scaling ratio from the drop down menu and re-load the plug-in or project to see the changes.
+* [New] Librarian Search. User can now search through patches in Patch Librarian view.
+* [New] Patch & Bank conflict warning system. This means that when ever parts share same bank & program number info, it will warn the user of such action. This function is great when data is being recalled to synth since it would overwrite the buffer with another parts data.
+* [New] Bank and Patch Number display. Browse hardware banks / patches OR Librarian banks / patches from the main UI.
+* [New] Browse Banks and Patches from Plug-in GUI without entering Librarian view. If Library Control is toggled on, user can browse banks and patches of librarian without having to enter the librarian itself.
+* [New] Saving mechanism update for GUI data to librarian has been improved. Now there is a single button in Librarian view to store GUI data on currently selected slot of Librarian view. User still has to Overwrite the bank or Save As under a new bank name for safety measure.
+* [New] Browse Patches sorted by Category in Patch Librarian.
+* [New] Multi level subfolder support for Patch Librarian.
+* [New] Improved MIDI and SysEx handling.
+* [New] Auto-save MIDI I/O. MIDI input and output are stored into text file when they are initially set. Next time the plug-in is inserted, these ports will be recalled and global data will be requested from the hardware.
+* [Fixed] Resolved issue where tab content did not update to new parameter values while clicking previous / next patch buttons.
+* [Fixed] Resolved issue where Checksum was not properly calculated for outgoing data.
+* [Fixed] Resolved issue where Experimental MIDI Clock crashed Ableton Live.
+* [Fixed] Resolved issue where "Abort Process" button was not responding while requesting patches / multi data from Q.
+* [Fixed] Resolved issue where Tempo was not properly synced to DAW tempo.
+* [Fixed] Resolved issue where MIDI clock data was not accurate when clock was turned on at Advanced MIDI Settings page.
+* [Fixed] Resolved issue where some menu items did not update accordingly.
+* [Fixed] Resolved issue where Mod Wheel was not working as expected.
+* [Fixed] Resolved issue where Sustain Pedal was not working as expected.
+* [Other] Changed default MIDI routing to "Directly to hardware" instead "With attempt to match DAW buffer setting".
+* [Other] Altered some button colors in Librarian to draw in more attention.
+* [Other] Framework updates to make everything work smoother.
+* [Other] Some minor graphical updates, which you might not note...
+* [Update] New approach to splitting huge MIDI file to smaller ones so librarian can read them.
+
+Version 1.0.3 / 2018-05-01
+
+* [Fixed] Resolved issue where category browsing caused plugin crash
+* [Update] if temp patch was requested more than once to librarian, it was only processed once.
+* [Update] control display shows only part info which is active in the plug-in while daw is playing.
+* [Update] Filter 2 Keytrack did not show value as supposed to.
+* [Update] Fixed if filter mode was analog lp, it is now set to digital lp for regullar q models.
+
+Version 1.0.2 / 2018-04-28
+
+* [Fixed] Resolved issues with dropdown menus.
+* [Fixed] Resolved issue where changing part from plug-in should keep the settings on all channels. this will send multi and patch data to device in order to keep the changed values.
+
+Version 1.0.1 / 2018-04-25
+
+* [Fixed] Resolved issue where temp from hardware was not received to librarian.
+
+Version 1.0.0 / 2018-04-08
+
+* [Update] A lot fixes applied to overall performance of the plug-in and patch, multi & sequence file management.
+
+Version 0.9.9 RC1 / 2018-01-04
+
+* [New] fxInputList updated for five fx input and vocoder input signals.
+* [New] Arpeggiator functions added.
+* [New] Effects functions added including Delay and others. Tap Delay missing.
+* [New] partStatus lists updated.
+* [New] Implemented category function to Librarian Patch.
+* [New] microQ to Q patch format decoder started. Not yet fully functional.
+* [Update] ControlDisplay functions updated.
+* [Update] Incoming Multi, Single and Global data decoders fixed.
+* [Update] Fixed logged in user name thingy so that current user name is fetched.
+* [Update] Removed unused parameters and their functions.
+* [Update] Category name displays “INIT” instead of “– INIT –” on plugin launch.
+
+Version 0.9.8 RC1 / 2017
+
+* [Fixed] PWM knob was not working as expected on OSC 2.
+* [Fixed] Request from librarian could cause possible “endless loop” while requesting data from hardware.
+* [Fixed] Requesting data from hardware did not show the cancel button to user while librarian tab was open.
+* [Fixed] Librarian start up mode fixed to single patch mode.
+* [Fixed] Filter, Amp, Env3 and Env4 graphics did not update when moving knobs from hardware.
+* [Fixed] Local Control / KBD Local Control did not work as expected on plug-in end.
+* [Fixed] If data request was cancelled by user, plug-in displayed “data request completed!” instead “data request CANCELLED!”.
+* [Fixed] If local control was set to off from hardware, same result did not happen in plug-in.
+* [Other] Librarian request interval fixed to 200ms at start up.
+* [Other] Incoming data analysis works better now and update user interface as expected.
+
+Version 0.9.5 BETA / 2017-10-24
+
+* [New] qXr is now Q and Q+ exclusive. microQ model will have their own plug-in called ‘microQxR’. Existing customers of qXr will receive full access to both plug-ins.
+* [New] Multi functions implemented properly – Gears icon on multimode mixer reveals additional multi parameters and on the left hand side, you can choose page 2 for multi settings.
+* [New] Mod matrix and other parameters now correspondingly change value on hardware and vice versa.
+* [New] Yellow, Halloween, Blue, Red and Phoenix skins. Reboot plug-in or reload project in order to see the changes.
+* [Other] Other minor and major fixes here and there.
+
+Version 0.8.5 BETA / 2017-04-22
+
+Beta release
