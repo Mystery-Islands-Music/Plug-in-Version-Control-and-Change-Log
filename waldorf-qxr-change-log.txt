@@ -1,3 +1,15 @@
+Version 1.0.5 / 2019-07-22
+
+* [New] Factory Banks included from Waldorf Music website: 1998, 1999, 2000 and 2001.
+* [New] Request Interval has a new range of 50ms, 75ms, 100ms, 150ms, 200ms, 300ms, 400ms, 500ms. Default is set to 75ms. When writing data to hardware, it is suggested to use 150ms interval (by us).
+* [Fixed] Resolved issue where writing to hardware did not work properly.
+* [Fixed] Resolved issue where preset 100 was not selectable.
+* [Fixed] Resolved issue where Mute, MIDI Rx, MIDI Tx, Engine, Pitchbend, Modwheel, Aftertouch, Sustain, Buttons and Prog.Change parameters did not work as expected.
+* [Fixed] Resolved issue where "Abort Process" button was not shown while storing data to hardware and while request data from hardware.
+* [Fixed] Resolved issue where plugin failed to load banks with device ID 127.
+* [Fixed] Resolved issue where patch bank were not processed properly after converting them from microQ or blofeld format.
+* [Fixed] Resolved issue where categories were only shown from a pre-set range. Now all files are scanned for categories and they are all added to category filtering menu.
+
 Version 1.0.4 / 2019-07-16
 
 * [New] Resizable GUI. Choose GUI scaling ratio from the drop down menu and re-load the plug-in or project to see the changes.
