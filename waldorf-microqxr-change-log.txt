@@ -1,3 +1,16 @@
+Version 1.0.5 / 2019-07-24
+
+* [New] Factory Banks included from Waldorf Music website: 2000 and 2001.
+* [New] Request Interval has a new range of 50ms, 75ms, 100ms, 150ms, 200ms, 300ms, 400ms, 500ms. Default is set to 100ms. When writing data to hardware, it is suggested to use 150ms interval (by us).
+* [Fixed] Resolved issue where SysEx checksum was not calculated properly in some cases.
+* [Fixed] Resolved issue where preset 100 was not selectable.
+* [Fixed] Resolved issue where "Abort Process" button was not shown while storing data to hardware and while request data from hardware.
+* [Fixed] Resolved issue where plugin failed to load banks with device ID 127.
+* [Fixed] Resolved issue where patch bank were not processed properly after converting them from Q or blofeld format.
+* [Fixed] Resolved issue where categories were only shown from a pre-set range. Now all files are scanned for categories and they are all added to category filtering menu.
+* [Other] A few more tweaks to Bank / Patch conflict system to make it better.
+
+
 Version 1.0.4 / 2019-07-11
 
 * [New] If MIDI I/O is auto set from previous session, plug-in will auto request global data to establish the connection with right global settings.
