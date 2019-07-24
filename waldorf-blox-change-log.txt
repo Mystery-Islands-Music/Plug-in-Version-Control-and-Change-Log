@@ -1,3 +1,13 @@
+Version 1.1.8 / 2019-07-24
+
+* [New] Request Interval has a new range of 50ms, 75ms, 100ms, 150ms, 200ms, 300ms, 400ms, 500ms. Default is set to 100ms. When writing data to hardware, it is suggested to use 150ms interval (by us).
+* [Fixed] Resolved issue where bank conflict messages was shown constantly after initialization of plugin.
+* [Fixed] Resolved issue where data request was sent to hardware even when the Req. Data on Prog Change was toggled off.
+* [Fixed] Resolved issue where SysEx checksum was not calculated properly in some cases.
+* [Fixed] Resolved issue where preset 128 was not selectable.
+* [Fixed] Resolved issue where OSC sample display and menu indicated value 127 even when the text file contained 128 names.
+
+
 Version 1.1.7 / 2019-07-11
 
 * [New] If MIDI I/O is auto set from previous session, plug-in will auto request global data to establish the connection with right global settings.
