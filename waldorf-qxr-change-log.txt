@@ -1,3 +1,13 @@
+Version 1.0.6 / 2019-07-24
+
+* [Fixed] Resolved issue where Request Interval did not work properly.
+* [Fixed] Resolved issue where bank conflict messages was shown constantly after initialization of plugin.
+* [Fixed] Resolved issue where data request was sent to hardware even when the Req. Data on Prog Change was toggled off.
+* [Fixed] Resolved issue where initial filter link values were not set properly.
+* [Other] Default request interval changed to 100ms.
+* [Other] A few more tweaks to Bank / Patch conflict system to make it better.
+
+
 Version 1.0.5 / 2019-07-22
 
 * [New] Factory Banks included from Waldorf Music website: 1998, 1999, 2000 and 2001.
