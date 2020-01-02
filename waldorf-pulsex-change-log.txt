@@ -1,3 +1,9 @@
+Version 1.0.9 / 2020-01-01
+
+* [MAC] Support for macOS Catalina. User data moved to /Library/Audio/Presets/Mystery Islands Music/(plugin-name)/ folder. User must manually copy sound data from old /Documents/Mystery Islands Music/ folder to the new location.
+* [New] Librarian Bank Edit Menu has a new item called "Open DATA folder" which will open the current plug-in data folder.
+
+
 Version 1.0.8 / 2019-07-11
 
 * [New] Program number display. User can now choose program from dropdown menu next to plug-in "display". If "load from library" is toggled on, user will see a list of banks and presets of banks in the menu.

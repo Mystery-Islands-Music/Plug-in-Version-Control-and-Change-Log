@@ -1,3 +1,16 @@
+Version 2.1.7 / 2020-01-01
+
+* [Other] Some minor updates in txt domains.
+
+
+Version 2.1.6 / 2019-12-28
+
+* [MAC] Support for macOS Catalina. User data moved to /Library/Audio/Presets/Mystery Islands Music/(plugin-name)/ folder. User must manually copy sound data from old /Documents/Mystery Islands Music/ folder to the new location.
+* [New] Librarian Bank Edit Menu has a new item called "Open DATA folder" which will open the current plug-in data folder.
+* [Fixed] Some parameters did not show their names with [part-id] -number in it.
+* [WIP] Resolved issue where plugin would fail AU validation in some cases.
+
+
 Version 2.1.5 / 2019-07-11
 
 * [New] Auto-save MIDI I/O. MIDI input and output are stored into text file when they are initially set. Next time the plug-in is inserted, these ports will be recalled and global data will be requested from the hardware.
