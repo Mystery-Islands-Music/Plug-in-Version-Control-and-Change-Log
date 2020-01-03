@@ -1,3 +1,9 @@
+Version 1.0.7 / 2020–01-03
+
+* [MAC] Support for macOS Catalina. User data moved to /Library/Audio/Presets/Mystery Islands Music/(plugin-name)/ folder. User must manually copy sound data from old /Documents/Mystery Islands Music/ folder to the new location.
+* [New] Librarian Bank Edit Menu has a new item called "Open DATA folder" which will open the current plug-in data folder.
+
+
 Version 1.0.6 / 2019-01-21
 
 * [Fixed] Requesting data from HW did not work under certain conditions.
