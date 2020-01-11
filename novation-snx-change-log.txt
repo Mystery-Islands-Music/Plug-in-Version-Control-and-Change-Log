@@ -1,4 +1,4 @@
-Version 1.0.8 / 2020-01-10
+Version 1.0.8 / 2020-01-11
 
 * [New] Request Interval has a new range of 50ms, 75ms, 100ms, 150ms, 200ms, 300ms, 400ms, 500ms. Default is set to 100ms. When writing data to hardware, it is suggested to use 150ms interval (by us).
 * [New] Patch & Bank conflict warning system. This means that when ever parts share same bank & program number info, it will warn the user of such action. This function is great when data is being recalled to synth since it would overwrite the buffer with another parts data.

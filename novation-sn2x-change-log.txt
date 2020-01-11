@@ -1,3 +1,17 @@
+Version 1.1.1 / 2020-01-11
+
+* [New] Request Interval has a new range of 50ms, 75ms, 100ms, 150ms, 200ms, 300ms, 400ms, 500ms. Default is set to 100ms. When writing data to hardware, it is suggested to use 150ms interval (by us).
+* [New] Patch & Bank conflict warning system. This means that when ever parts share same bank & program number info, it will warn the user of such action. This function is great when data is being recalled to synth since it would overwrite the buffer with another parts data.
+* [New] Bank and Patch Number display. Browse hardware banks / patches OR Librarian banks / patches from the main UI.
+* [New] Browse Banks and Patches from Plug-in GUI without entering Librarian view. If Library Control is toggled on, user can browse banks and patches of librarian without having to enter the librarian itself.
+* [New] Saving mechanism update for GUI data to librarian has been improved. Now there is a single button in Librarian view to store GUI data on currently selected slot of Librarian view. User still has to Overwrite the bank or Save As under a new bank name for safety measure.
+* [New] Multi level subfolder support for Patch Librarian.
+* [New] Improved MIDI and SysEx handling.
+* [New] Auto-save MIDI I/O. MIDI input and output are stored into text file when they are initially set. Next time the plug-in is inserted, these ports will be recalled and global data will be requested from the hardware.
+* [Fixed] Resolved issue where plugin would fail to pass scanning process and did not appear in the DAW.
+* [Other] Altered some button colors in Librarian to draw in more attention.
+* [Other] Framework updates to make everything work smoother.
+
 Version 1.1.0 / 2020–01-03
 
 * [MAC] Support for macOS Catalina. User data moved to /Library/Audio/Presets/Mystery Islands Music/(plugin-name)/ folder. User must manually copy sound data from old /Documents/Mystery Islands Music/ folder to the new location.
