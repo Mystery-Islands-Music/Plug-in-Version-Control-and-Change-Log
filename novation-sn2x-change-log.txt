@@ -1,3 +1,7 @@
+Version 1.1.2 / 2020-01-16
+
+* [Fixed] Reworked Save Data to Slot function.
+
 Version 1.1.1 / 2020-01-11
 
 * [New] Request Interval has a new range of 50ms, 75ms, 100ms, 150ms, 200ms, 300ms, 400ms, 500ms. Default is set to 100ms. When writing data to hardware, it is suggested to use 150ms interval (by us).
