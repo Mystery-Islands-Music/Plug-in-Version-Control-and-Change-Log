@@ -1,0 +1,200 @@
+Version 2.3.0 / 2018-02-06
+
+* [Fixed] Incoming MIDI CC now moves the knobs, buttons and menus as expected.
+* [Fixed] Renaming of patches / performances now inserts proper data to empty character slots.
+* [Fixed] In some cases plug-in displayed that license was not found.
+* [Fixed] Incoming SysEx data from hardware blinks the LEDs as expected.
+* [Fixed] Incoming MIDI CC data blinks the LEDs as expected.
+* [Fixed] Sometimes the plug-in got stuck into a “connection time-out!” loop.
+* [Fixed] Reading patch files from HDD crashed plug-in and caused it to be blacklisted by various DAWs.
+* [Fixed] If bank name was too long for display, librarian bank up / down buttons were not able to select that bank.
+* [New] Randomizer now works directly from the Randomizer button to currently active layer or performance if performance mode is on.
+* [New] Included Important Notification popup, which occurs at first run. This popup contains quick info for both, Mac and PC users.
+* [New] Included about window. Window can be triggered by clicking on the LOGO area.
+* [New] Included third LED to display if MIDI data is coming from Performance Channel.
+* [Other] Adjusted graphics a bit to give more depth to the interface look.
+Version 2.2.5 / 2017-11-04 PC ONLY
+
+* [Fixed] 64bit plug-in is actually now 64bit plug-in. NOTE: not backward compatible!
+
+
+Version 2.2.4 / 2017-10-24
+
+* [Fixed] All Sounds Off message is not controlled so that when daw playback stops, message is sent out to device.
+* [Fixed] MIDI input status led functions have been reworked.
+* [Fixed] Layer link button was not recalled properly when project was opened.
+* [New] When save as is triggered, user can now save to *.j8p format instead *.syx, which was not following the System Exclusive standard.
+
+
+Version 2.2.3 HOTFIX / 2017-10-16
+
+* [Fixed] Sometimes when data was requested from hardware to plug-in, it did not search for right Device ID. This resulted “No response from JP” messages.
+* [Fixed] Fixed issue where plug-in caused crash when exiting DAW.
+
+
+Version 2.2.3 / 2017-10-15
+
+* [Fixed] When patch / performance data was altered on left bank, user was able to scroll through different banks. Now user must save or discard changes in order to change bank in left view.
+* [Fixed] Removed Key Mode from Randomizer function.
+* [Fixed] Program changes from external sources now changes program in hardware IF Allow Incoming Program Change button is toggled.
+* [Fixed] If synth is in dual mode and notes / controls are triggered from Performance MIDI channel to plugin, notes and controls will be sent to both layers.
+* [Fixed] Renaming patches / performances did not work as expected in librarian.
+* [Fixed] Layer link does what it is supposed to do: links layers.
+* [Fixed] Layer link switch was unavailable when leaving Velocity Assign Layer.
+
+
+Version 2.2.2 / 2017-09-30
+
+* [Fixed] Typing error on LFO1 waveform: Triagle -> Triangle.
+* [Fixed] Small error in librarian popup menus.
+* [Fixed] Small bug in librarian which occurred when data was pasted to a slot.
+* [Fixed] Small bug in total recall.
+
+
+Version 2.2.1 / 2017-09-23
+
+* [New] Included Master Keyboard switch in the main user interface to determine if the connected hardware is a master keyboard in users setup. This helps to filter out MIDI messages being sent back to hardware, even though user is not in the plug-in channel at DAW.
+* [New] Randomizer. Yes thats right, randomizing controls can be established now by clicking ‘randomize’ button in the main user interface and by choosing which data to randomize. This works together with the section locks, so if user has section locks on for certain areas, these areas are not affected by the randomization.
+* [New] Import WinJP librarian files. User can now import WinJP Patch or Performance files from librarian view. Click ‘Bank Edit’ and choose ‘import… ‘ WinJP Performance or WinJP Patch. Banks will appear in the librarian once the conversion is done.
+* [New] Automatic file recovery. This is a special function that we decided to build in order to keep synth model specified data in its specifications. For example: User drags or copies a patch from right list and drops or pastes it into the left bank. Now the right bank is actually imported from JP-8080 and the left bank is from JP-8000. Result=mixed bank which can not be opened by any other applications. This is now fixed and data will be altered to match the original format where data is copied to.
+* [New] Added bank up/down buttons in the patch librarian view to scroll between banks.
+* [Improvement] Patch & Performance data streams are now working better.
+* [Fixed] Patch and Performance copy/paste & drag/drop & rename functions fixed.
+
+
+Version 2.1.3 / 2016-12-05
+
+* [New] VST is now being installed to c:\program files\steinberg\vstplugins\jp-80×0 editor\ by default.
+* [New] Windows data is now located in Documents\Mystery Islands Music\Roland JP-80×0 Editor\. Copy your previous patches to new patches folder and license.key as well.
+* [New] Mac data is now located in Documents/Mystery Islands Music/Roland JP-80×0 Editor/. Copy your previous patches to new patches folder and license.key as well.
+* [Fixed] If patches were not present / patch data folder was not found, plug-in caused a crash.
+* [Update] Now patch / performance files which has long name are shortened only for the bank name display area. No need to shorten the bank names anymore.
+* [Update] Logging is even deeper when activated.
+
+
+Version 2.1.2 / 2016-11-18
+
+* [Improvement] Reduced plugin memory usage -> Plugin boots faster.
+* [Improvement] Added extra checks for incoming messages to make sure data is handled properly after receiving it.
+* [MIDI] If device was set to wrong value at first time and set to right port at the second time, initialization message was not sent & received to check for hardware device settings.
+* [Fix] If panel had Velocity or Control assignment set, it was resulting ”checksum error” in the hardware and the patch settings did not match the last saved settings.
+* [GUI] Both panels Velocity and Control assignment knobs now display values in a range of -100% -> +100%
+* [GUI] Some menu items displayed values 0->x amount rather than the menu item name.
+
+
+Version 2.1.1 / 2016-11-03
+
+* [New] Plugin has been re-designed with new 33% larger UI for better handling of presets, performances and overall usability.
+Larger UI, 1500 x 757px.
+New design of panel selection buttons.
+New design of parameter display.
+New design of knobs and buttons.
+Section Locks to prevent parameter changes up on program change or while applying randomizer. (Randomizer is coming soon).
+All parameters are registered from hardware and sent back as they were received up on project recall.
+MIDI in / out state recall fixed.
+Modulation ”wheel” added to main UI for quick mod wheel actions.
+Bend up and Bend down range added.
+Added ”Allow incoming program change” button to UI if you don’t want to update plugin UI up on preset changes on hardware.
+When MIDI in and out is selected, a system message will be requested from hardware to receive the important settings needed to make the connection work flawlessly.
+New link button added to UI, for linking panels. (still in beta and may not function as expected).
+New model selector in the main UI to make sure all functions work in between the editor and the model chosen.
+Removed the old white bank and prog buttons and replaced them with simple DEC and INC buttons to scroll throught patches from hardware or librarian.
+The whole code framework has been revised.
+* [New] Librarian has been completely revised.
+Old buttons removed from the librarian to make the usage easier.
+Added new librarian menu, where are different functions such as:
+Request temp patch to UI from chosen panel of performance.
+Request temp patch to librarian from chosen panel of performance.
+Request patch from hardware slot based on slot at librarian.
+Request all patches from selected bank, including user memory, presets and smart media card (jp-8080 only).
+Same as above for performances.
+Request currently active panel patch from UI to librarian.
+Save bank (overwrite).
+Save as… Standard MIDI or SysEx.
+Import banks.
+Register plugin from librarian edit menu.
+Set interval between message requests to hardware. (In case if MIDI device can’t handle it as fast as it should, you can set the interval longer to prevent missing slots while requesting).
+Right click on patch / performance files on right side list will open a popup menu to copy patch.
+Right click on patch / performance files on left side list will open a popup menu to paste, initialize, rename or request data functions.
+
+
+v2.0.3 / 2014-08-07
+
+Saving patches in librarian now appears in patches list.
+Saving performances in librarian now appears in performances list.
+When edit mode is on, user is not able to flip between performance and patchfiles.
+Librarian now supports SysEx files (*.syx). Users can now freely copy their SysEx files to the patches folder and view them thru librarian.
+Demo installer now includes Mystery Islands Always Alive, Alan Marcero Trance presetes & Gokosouls Quarantine soundset demos.
+Saving performances after requesting entire bank works as expected.
+After user saves / discards the changes in librarian, patch & performance lists will initialize to original state.
+
+
+v2.0.1 / 2014-07-23
+
+Request current patch from selected slot to librarian.
+Request all patches from selected bank to librarian.
+Store currently selected patch from librarian to hardware.
+Store current patch bank from librarian to hardware.
+Request temp performance data to librarian.
+Request current performance from selected slot to librarian.
+Request all performance data from selected bank to librarian.
+Store currently selected performance data from librarian to hardware.
+Store current performance bank from librarian to hardware.
+Load any midi / sysex patch or performance bank to librarian.
+Browse performance & patch banks within plugin librarian.
+Load currently selected performance data to plugin memory.
+Load currently selected performance bank to plugin memory.
+Load selected single patch to selected performance slot (upper / lower).
+Organize performance data in librarian and save a new performance bank to hard drive.
+Organize patch data in librarian and save a new patch bank to hard drive.
+Option to scroll thru hardware programs without sending performance / patch data to hardware.
+View & edit upper / lower part patch name.
+View & edit upper / lower part velocity sensitivity levels.
+View & edit upper / lower part control assign sensitivity levels.
+More knobs & buttons now reacts to hardware knob / button movements.
+Select performance midi channel.
+Select remote keyboard midi channel.
+
+
+v2.0.0 / 2014-02-19
+
+* [New] Full librarian browser to view, edit and store MIDI and SysEx content from hard-drive.
+* [New] Patch and performance data can be sent to JP-8000 / JP-8080 directly from the plug-in.
+* [New] Upper and Lower layer patch name can be viewed and set.
+* [New] Option to load single patches in upper or lower layer of active performance.
+* [New] Velocity sensitivity controls for both layers individually.
+* [New] Performance and Remote MIDI channels can be set from the plug-in UI.
+* [New] Init patch and performance banks included.
+* [New] GUI elements has been worked out.
+
+
+v1.1.8 / 2013-01-10
+
+* [New] Windows VST included in the package.
+* [Other] Minor bug fixes.
+
+
+v1.1.6 / 2013-06-09
+
+* [Fixed] All knob movements from Hardware can be seen visually in plug-in interface.
+* [Fixed] All button / menu selections are updated to the plug-in user interface as well.
+* [Fixed] Added delay between outgoing SysEx packages, so the data is handled correctly.
+* [Fixed] Added All Notes Off (CC#123) message to prevent hanging notes while changing patches.
+* [Fixed] Fixed value displays for Tempo, OSC 2 range and Fine tuning knobs.
+* [Fixed] New knobs added to replace the old ones.
+* [Fixed] Storing patches to the hardware unit is now possible.
+* [Other] We have included soundset by Alan Marcero with the plug-in.
+
+
+v1.0.3 / 2013-05-28
+
+* [Fixed] Osc2 Fine/wide knob didn’t show its values right.
+* [Fixed] MIDI I/O state was not saved with the project correctly.
+* [Fixed] Soundbank is updated with latest plugin controller data.
+* [Fixed] Bank and Prog data now changes in Hardware if changing a preset from the plug-in.
+* [Other] Minor improvements.
+
+
+v1.0.0 / 2013-05-23
+
+* [Init] Initial release without librarian functions – Mac only!
