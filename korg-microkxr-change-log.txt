@@ -1,3 +1,20 @@
+Version 1.3.9 / 2020-01-30
+
+* [New] Import microKorg programs created with the official Korg microKorg Editor.
+* [Fixed] Resolved issue where data from hardware was requested improperly.
+* [Fixed] Resolved issue where data writing to hardware was not successfully completed. Note that data write takes a long time, so pick up a cup of tea or coffee while in progress.
+* [Fixed] Resolved issue where sound was initialized when launching the plugin with auto saved MIDI input and output.
+
+Version 1.3.8 / 2020–01-24
+
+* [New] Save Data to Slot function. Quickly fetch your user interface patch to librarian and store it from there. Read more about the function from our blog.
+* [New] Autosave MIDI Input and Output. Once you set your MIDI Input and MIDI Output in the plug-in, it will remember those ports next time you initialize the plug-in.
+* [New] Whole plug-in framework reworked and improved. Please report any bugs or malfunctions to our forums - Thank you!
+* [Fixed] Resolved issue where patch data was sent in wrong factor to the hardware unit.
+* [Fixed] Some odd recall issues resolved and cases where patch data was not properly set to user interface.
+* [Fixed] Some old urls fixed in the splash-windows.
+* [Fixed] Some bad coding refactored.
+
 Version 1.3.7 / 2020–01-03
 
 * [MAC] Support for macOS Catalina. User data moved to /Library/Audio/Presets/Mystery Islands Music/(plugin-name)/ folder. User must manually copy sound data from old /Documents/Mystery Islands Music/ folder to the new location.

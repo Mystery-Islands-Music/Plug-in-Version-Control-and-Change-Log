@@ -1,3 +1,16 @@
+Version 2.0.5 / 2020-01-30
+
+* [New] Import microKorg programs created with the official Korg microKorg Editor.
+* [Fixed] Resolved issue where data from hardware was requested improperly.
+* [Fixed] Resolved issue where data writing to hardware was not successfully completed. Note that data write takes a long time, so pick up a cup of tea or coffee while in progress.
+* [Fixed] Resolved issue where sound was initialized when launching the plugin with auto saved MIDI input and output.
+
+Version 2.0.4 / 2020-01-24
+
+* [Fixed] Resolved issue where data from hardware was not picked up at all.
+* [Fixed] Resolved issue where MIDI ports were not recalled properly after recalling the project.
+* [Other] Some minor fixes here and there.
+
 Version 2.0.3 / 2020-01-19
 
 * [New] Save Data to Slot function. Quickly fetch your user interface patch to librarian and store it from there. Read more about the function from our blog.
