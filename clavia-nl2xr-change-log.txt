@@ -1,3 +1,8 @@
+Version 2.1.8 / 2020-01-31
+
+* [Fixed] In some cases data transmissions were not working as expected.
+* [Fixed] Parameters are reset properly after inserting the plugin to DAW.
+
 Version 2.1.7 / 2020-01-01
 
 * [Other] Some minor updates in txt domains.
