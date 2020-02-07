@@ -1,3 +1,7 @@
+Version 1.1.4 / 2020-02-07
+
+* [Other] Blocked outgoing midi stream while device initialization is in progress.
+
 Version 1.1.2 / 2020-01-16
 
 * [Fixed] Reworked Save Data to Slot function.
