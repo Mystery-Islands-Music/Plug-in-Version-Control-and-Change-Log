@@ -1,3 +1,11 @@
+Version 1.0.2 / 2020-04-05
+
+* [New] Clock Source can now be selected in Arp / Mod Matrix tab.
+* [Fixed] Resolved issue where Pattern Step Editor did not appear as it should.
+* [Fixed] Resolved issue where LFO 1 Clock modes were not selectable.
+* [Fixed] Resolved issue where Noise Level was not working.
+
+
 Version 1.0.1 / 2020-03-30
 
 * Initial Release.
