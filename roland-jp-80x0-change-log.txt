@@ -1,3 +1,9 @@
+Version 2.6.2 / 2020-04-20
+
+* [New] UIsize zoom level are now set to *0,69 / *1,00 / *1,31 to align fonts and images a lot better.
+* [Fixed] when UI is scaled up or down, abort process button is aligned better.
+* [Fixed] when UI is scaled up or down, librarian controls are aligned better.
+
 Version 2.6.1 / 2020-04-18
 
 * [Fixed] In some cases, librarian would get stuck into eternal loop while reading a sound bank file.
