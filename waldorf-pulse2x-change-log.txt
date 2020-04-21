@@ -1,3 +1,7 @@
+Version 1.0.3 / 2020-04-20
+
+* [Fixed] Resolved small issue within the framework code.
+
 Version 1.0.2 / 2020-04-05
 
 * [New] Clock Source can now be selected in Arp / Mod Matrix tab.
