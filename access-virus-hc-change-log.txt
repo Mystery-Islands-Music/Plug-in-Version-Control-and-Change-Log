@@ -1,3 +1,7 @@
+Version 2.0.0 beta release candidate 3 / 2020-08-07
+
+* [NEW] The whole plug-in has been re-written. We will provide full change log once all the bugs and new features are added in.
+
 Version 1.5.14 / 2018-11-07
 
 * [Fixed] Saving TI bank as MIDI file is now recognized in the Access Virus TI Control Software.
