@@ -1,3 +1,24 @@
+Version 2.0.0 beta rc4 / 2020-08-12
+
+* [RC4] New plug-in name. VirusHC Editor is now VirusHC Editor v2 to allow project data swaps. Note that when you insert the new plug-in to the project, you must push the data to your virus or allow the total recall to run through. Then remove MIDI port assignment from the old plug-in and insert the new one. Setup plug-in as instructed and request data from virus to new plug-in.
+* [RC4] Compatible with with all virus models.
+* [RC4] Support for librarian functions. (Write and requests work now as expected).
+* [RC4] Please note new DATA location for license.key
+* [RC4] Category filtration re-designed. Choose to toggle on Category filter first and then choose the filter from the menu right next to the toggle switch.
+* [RC4] Patch and Multi programs are now scanned every time when one enters the librarian tab.
+* [RC4] Patch file incompatibility issues mapped further.
+* [RC4] MIDI CC coming via the DAW are now being mapped to Virus CC table.
+* [RC4] Global data is now sent to virus (a, b and c models only) up on total recall.
+* [Fixed] Resolved issue where panning from multimode mixer was not working properly. Now multimode mixer and quick mixer panning affects directly to patch panning.
+* [Fixed] Resolved Total Recall issue where only multi data was transmitted to virus.
+* [Fixed] Resolved issue where unmapped parameters caused crashes.
+* [Fixed] Patched memory leak while reading patch files.
+* [Fixed] Program and Bank change menus work as expected.
+* [Fixed] Resolved issue where arp user editor had wrong sysex data assigned to parameters above step 9.
+* [Fixed] Soft Knob alignments in multimode mixer tab are now global and on arp tab they are single patch mapped.
+* [Fixed] Small issues here and there.
+
+
 Version 2.0.0 beta release candidate 3 / 2020-08-07
 
 * [NEW] The whole plug-in has been re-written. We will provide full change log once all the bugs and new features are added in.
