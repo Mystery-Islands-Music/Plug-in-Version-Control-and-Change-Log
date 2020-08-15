@@ -1,3 +1,17 @@
+Version 2.0.0 beta rc5 / 2020-08-15
+
+* [RC5] UI and LOG files are now located where they are expected to be.
+* [Fixed] Resolved issue where reverb, delay, additional oscillator modes, chorus and distortion did not work properly with virus ti range.
+* [Fixed] Resolved issue where delay / reverb was disabled in some cases.
+* [Fixed] Resolved issue where wrong data was stored to librarian when TI was selected as model of use.
+* [Fixed] Resolved issue where data was recalled wrong for TI users.
+* [Fixed] Resolved issue where unison settings were not saved properly.
+* [Fixed] Resolved issue where users were not able to rename multi files in librarian.
+* [Fixed] Resolved issue where unknown CC would cause plug-in to crash.
+* [Fixed] Small issues here and there.
+* [Other] Studio One users can navigate the librarian view with arrow keys while holding down right control key. (tested on macOS only).
+
+
 Version 2.0.0 beta rc4 / 2020-08-12
 
 * [RC4] New plug-in name. VirusHC Editor is now VirusHC Editor v2 to allow project data swaps. Note that when you insert the new plug-in to the project, you must push the data to your virus or allow the total recall to run through. Then remove MIDI port assignment from the old plug-in and insert the new one. Setup plug-in as instructed and request data from virus to new plug-in.
