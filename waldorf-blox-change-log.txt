@@ -1,3 +1,13 @@
+Version 1.2.0 / 2020-09-22
+
+* [Fixed] Multi and Single name first character was not set properly.
+* [Fixed] Global settings were not recalled properly during total recall.
+* [Fixed] Multi Program number is now recalled with the global settings.
+* [Fixed] Multi Program number is now shown when Multimode Mixer is toggled on.
+* [Fixed] MIDI out was not properly sent while playing notes or adjusting parameters.
+* [Other] Removed Auto-MIDI Input & Output assign function due to difficulties with multiple units.
+* [Other] Part 1 Defaults to Bank A prog 1, Part 2 Bank B prog 2 etc.
+
 Version 1.1.9 / 2020-01-02
 
 * [MAC] Support for macOS Catalina. User data moved to /Library/Audio/Presets/Mystery Islands Music/(plugin-name)/ folder. User must manually copy sound data from old /Documents/Mystery Islands Music/ folder to the new location.
