@@ -1,3 +1,12 @@
+Version 1.2.1 / 2020-09-24
+
+* [New] Plug-in will now say if license can not be validated and prompts to locate the license file. It does not matter if license has .key or .txt extension to it, both are supported.
+* [New] User Manual.
+* [New] User Manual can be opened from patch librarian -> bank edit -> other helpful things... Open User Manual.
+* [New] Import *.mqr (microQxR) or *.qxr (qXr) formats from bank edit -> import menu to librarian.
+* [New] *.mqr (microQxR) and *.qxr (qXr) formats are now directly read from the Patches folder upon plug-in launch.
+* [Fixed] license.key.txt is now automatically renamed to license.key when applying the license via patch librarian -> bank edit -> register plug-in.
+
 Version 1.2.0 / 2020-09-22
 
 * [Fixed] Multi and Single name first character was not set properly.
