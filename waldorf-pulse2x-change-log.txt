@@ -1,3 +1,11 @@
+Version 1.0.6 / 2020-09-28
+
+* [New] User Manual can be opened from patch librarian -> bank edit -> other helpful things... Open User Manual.
+* [New] Plug-in will now say if license can not be validated and prompts to locate the license file. It does not matter if license has .key or .txt extension to it, both are supported.
+* [New] Import *.pl2 (Pulse2X) or *.pls (PulseX) formats from bank edit -> import menu to librarian.
+* [New] *.pl2 (Pulse2X) and *.pls (PulseX) formats are now directly read from the Patches folder upon plug-in launch.
+* [Fixed] license.key.txt is now automatically renamed to license.key when applying the license via patch librarian -> bank edit -> register plug-in.
+
 Version 1.0.5 / 2020-09-23
 
 * [Fixed] Program names are now capitalized as well as category names.
