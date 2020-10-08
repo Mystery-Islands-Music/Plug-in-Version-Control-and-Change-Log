@@ -1,3 +1,10 @@
+Version 1.2.2 / 2020-10-09
+
+* [Fixed] Resolved issue where some patch banks were not visible in the librarian in some cases.
+* [Fixed] Resolved issue where selecting patch bank would crash the plug-in in some cases.
+* [Fixed] Resolved issue where control display would show information while it was not supposed to do so.
+* [Other] Registration notification dialog will appear only if plug-in user interface is open.
+
 Version 1.2.1 / 2020-09-25
 
 * [New] Plug-in will now say if license can not be validated and prompts to locate the license file. It does not matter if license has .key or .txt extension to it, both are supported.
