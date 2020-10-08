@@ -1,3 +1,10 @@
+Version 2.6.4 / 2020-10-08
+
+* [Fixed] Resolved issue where some patch banks were not visible in the librarian in some cases.
+* [Fixed] Resolved issue where selecting patch bank would crash the plug-in in some cases.
+* [Fixed] Resolved issue where control display would show information while it was not supposed to do so.
+* [Other] Registration notification dialog will appear only if plug-in user interface is open.
+
 Version 2.6.3 / 2020-10-08
 
 * [New] User Manual can now be opened from Patch Librarian -> Bank Edit Menu -> Other Helpful Things.. -> Open User Manual.
