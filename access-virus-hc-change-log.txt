@@ -1,3 +1,13 @@
+Version 2.0.0 beta rc8 / 2020-10-08
+
+* [New] Atomizer category item added.
+* [Fixed] Resolved issue where some patch banks were not visible in the librarian in some cases.
+* [Fixed] Resolved issue where selecting patch bank would crash the plug-in in some cases.
+* [Fixed] Resolved issue where plug-in could crash if patch category was out of range.
+* [Fixed] Resolved issue where control display would show information while it was not supposed to do so.
+* [Fixed] Resolved issue where TI reverb mode 1 would allow user to adjust the feedback level.
+* [Other] Registration notification dialog will appear only if plug-in user interface is open.
+
 Version 2.0.0 beta rc7 / 2020-10-04
 
 * [RC7] We are nearly ready to enter bug free VirusHC and official Release of version 2.
