@@ -1,3 +1,12 @@
+Version 2.6.3 / 2020-10-08
+
+* [New] User Manual can now be opened from Patch Librarian -> Bank Edit Menu -> Other Helpful Things.. -> Open User Manual.
+* [New] Converted files are now renamed with *j8k extension and original file is moved to Converted Banks folder.
+* [Fixed] Resolved issue where Librarian turned to endless loop while scanning patch and performance files.
+* [Fixed] Resolved issue where newly added files didn't appear in the main User Interface menus after refreshing folders.
+* [Fixed] Resolved issue where wrong plug-in name was mentioned in "about" screen.
+* [Other] License system update. Now license is asked for full version owners to be placed in right location.
+
 Version 2.6.2 / 2020-04-20
 
 * [New] UIsize zoom level are now set to *0,69 / *1,00 / *1,31 to align fonts and images a lot better.
