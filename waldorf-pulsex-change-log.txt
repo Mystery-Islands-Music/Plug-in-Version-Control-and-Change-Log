@@ -1,3 +1,19 @@
+Version 1.1.5 / 2020-10-10
+
+* [New] Open Support Ticket Menu item added to Patch Librarian -> Bank Edit -> Other Helpful Things..
+* [New] Check for Updates Menu item added to Patch Librarian -> Bank Edit -> Other Helpful Things..
+* [New] DAW User Guides Menu item added to Patch Librarian -> Bank Edit -> Other Helpful Things..
+* [Fixed] Resolved issue where plug-in scan could potentially hang.
+* [Fixed] Resolved issue where Register Plug-in dialog would not open from Patch Librarian -> Bank Edit -> Register Plug-in.
+* [Fixed] Resolved issue where newly added files didn't appear in the main User Interface menus after refreshing folders.
+
+Version 1.1.4 / 2020-10-09
+
+* [Fixed] Resolved issue where some patch banks were not visible in the librarian in some cases.
+* [Fixed] Resolved issue where selecting patch bank would crash the plug-in in some cases.
+* [Fixed] Resolved issue where control display would show information while it was not supposed to do so.
+* [Other] Registration notification dialog will appear only if plug-in user interface is open.
+
 Version 1.1.3 / 2020-09-28
 
 * [New] Plug-in will now say if license can not be validated and prompts to locate the license file. It does not matter if license has .key or .txt extension to it, both are supported.
