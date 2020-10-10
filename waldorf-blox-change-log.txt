@@ -1,3 +1,12 @@
+Version 1.2.3 / 2020-10-10
+
+* [New] Open Support Ticket Menu item added to Patch Librarian -> Bank Edit -> Other Helpful Things..
+* [New] Check for Updates Menu item added to Patch Librarian -> Bank Edit -> Other Helpful Things..
+* [New] DAW User Guides Menu item added to Patch Librarian -> Bank Edit -> Other Helpful Things..
+* [Fixed] Resolved issue where plug-in scan could potentially hang.
+* [Fixed] Resolved issue where Register Plug-in dialog would not open from Patch Librarian -> Bank Edit -> Register Plug-in.
+* [Fixed] Resolved issue where newly added files didn't appear in the main User Interface menus after refreshing folders.
+
 Version 1.2.2 / 2020-10-09
 
 * [Fixed] Resolved issue where some patch banks were not visible in the librarian in some cases.
