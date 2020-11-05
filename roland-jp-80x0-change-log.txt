@@ -1,3 +1,26 @@
+Version 2.6.6 / 2020-11-05
+
+* [macOS VST] This and previous releases will crash Steinberg Cubase version 9.5 - 10.5 when closing project or when removing the plug-in from the DAW. We are trying to figure this out, sorry for the inconvenience!
+
+* [New] MIDI Learn. User can now map their favorite DAW controller with CC commands to take over the plug-in user interface!
+* [New] Automation can now be recorded to DAW while moving hardware knobs.
+* [New] Reduced plug-in CPU usage up-to 90%.
+* [New] Reset Performance related part parameters when sending new data to hardware in patch mode.
+- This resolves a lot chorus and delay sync errors which made some of the patches sound awkward.
+* [New] If user hasn't copied anything in the Browser page to the clipboard, then paste menus will appear as unavailable.
+* [New] Safety check for MIDI I/O occupation. This feature will check the MIDI I/O port availability before it attempts to assign the port. No more MIDI crashes!
+* [New] User can now set plug-in to open in fixed model selection.
+- line 4 in JP-80x0 Editor UI.txt represents Model.
+- line 5 defines if the model will be overridden when loading the plugin.
+- (it is not advised to use this function when user has multiple models).
+* [New] Search can now be defined to search with Case Sensitivity. Option only visible when Magnify Glass is toggled on in Browser page.
+* [New] Reworked patch, performance and search menus. Menus should now remember their last set value when changing between layers.
+* [Fixed] Resolved issue where plug-in was not shown for macOS users after install.
+* [Fixed] Resolved issue where Dec and Inc buttons didn't work as expected when Library Control was toggled on.
+* [Fixed] Resolved issue where Bank Change commands didn't work as expected while Performance Mode was toggled on.
+* [Fixed] Resolved some cosmetic issues.
+* [Fixed] Resolved issue where Advanced MIDI Settings controls were causing crashes.
+
 Version 2.6.5 / 2020-10-10
 
 * [New] Open Support Ticket Menu item added to Patch Librarian -> Bank Edit -> Other Helpful Things..
