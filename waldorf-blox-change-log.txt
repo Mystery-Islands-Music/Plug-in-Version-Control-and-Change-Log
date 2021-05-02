@@ -1,3 +1,37 @@
+Version 1.2.3 / 2020-10-10
+
+* [New] Open Support Ticket Menu item added to Patch Librarian -> Bank Edit -> Other Helpful Things..
+* [New] Check for Updates Menu item added to Patch Librarian -> Bank Edit -> Other Helpful Things..
+* [New] DAW User Guides Menu item added to Patch Librarian -> Bank Edit -> Other Helpful Things..
+* [Fixed] Resolved issue where plug-in scan could potentially hang.
+* [Fixed] Resolved issue where Register Plug-in dialog would not open from Patch Librarian -> Bank Edit -> Register Plug-in.
+* [Fixed] Resolved issue where newly added files didn't appear in the main User Interface menus after refreshing folders.
+
+Version 1.2.2 / 2020-10-09
+
+* [Fixed] Resolved issue where some patch banks were not visible in the librarian in some cases.
+* [Fixed] Resolved issue where selecting patch bank would crash the plug-in in some cases.
+* [Fixed] Resolved issue where control display would show information while it was not supposed to do so.
+* [Other] Registration notification dialog will appear only if plug-in user interface is open.
+
+Version 1.2.1 / 2020-09-25
+
+* [New] Plug-in will now say if license can not be validated and prompts to locate the license file. It does not matter if license has .key or .txt extension to it, both are supported.
+* [New] Import *.mqr (microQxR) or *.qxr (qXr) formats from bank edit -> import menu to librarian.
+* [New] *.mqr (microQxR) and *.qxr (qXr) formats are now directly read from the Patches folder upon plug-in launch.
+* [Fixed] license.key.txt is now automatically renamed to license.key when applying the license via patch librarian -> bank edit -> register plug-in.
+* [Reminder] If user changes multi parameters while holding down left shift key, multi data will be sent to hardware when shift and parameter are released! Changing multi parameters will force the plug-in to send the entire arrangement data to hardware. If user wants to reduce the send load, mute parts that are not in use!
+
+Version 1.2.0 / 2020-09-22
+
+* [Fixed] Multi and Single name first character was not set properly.
+* [Fixed] Global settings were not recalled properly during total recall.
+* [Fixed] Multi Program number is now recalled with the global settings.
+* [Fixed] Multi Program number is now shown when Multimode Mixer is toggled on.
+* [Fixed] MIDI out was not properly sent while playing notes or adjusting parameters.
+* [Other] Removed Auto-MIDI Input & Output assign function due to difficulties with multiple units.
+* [Other] Part 1 Defaults to Bank A prog 1, Part 2 Bank B prog 2 etc.
+
 Version 1.1.9 / 2020-01-02
 
 * [MAC] Support for macOS Catalina. User data moved to /Library/Audio/Presets/Mystery Islands Music/(plugin-name)/ folder. User must manually copy sound data from old /Documents/Mystery Islands Music/ folder to the new location.

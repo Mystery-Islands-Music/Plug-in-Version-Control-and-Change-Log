@@ -1,3 +1,39 @@
+Version 2.0.0 beta rc9 / 2020-10-10
+
+* [New] Open Support Ticket Menu item added to Patch Librarian -> Bank Edit -> Other Helpful Things..
+* [New] Check for Updates Menu item added to Patch Librarian -> Bank Edit -> Other Helpful Things..
+* [New] DAW User Guides Menu item added to Patch Librarian -> Bank Edit -> Other Helpful Things..
+* [Fixed] Resolved issue where plug-in scan could potentially hang.
+* [Fixed] Resolved issue where Register Plug-in dialog would not open from Patch Librarian -> Bank Edit -> Register Plug-in.
+* [Important] This version has been tested bug free in our office. If you find that something is wrong, please open a ticket at https://www.mysteryislands-music.com/my-account/ - In the meanwhile, we are wrapping up the User Manual, Virus TI Snow graphics and getting ready for official release.
+
+Version 2.0.0 beta rc8 / 2020-10-08
+
+* [New] Atomizer category item added.
+* [Fixed] Resolved issue where some patch banks were not visible in the librarian in some cases.
+* [Fixed] Resolved issue where selecting patch bank would crash the plug-in in some cases.
+* [Fixed] Resolved issue where plug-in could crash if patch category was out of range.
+* [Fixed] Resolved issue where control display would show information while it was not supposed to do so.
+* [Fixed] Resolved issue where TI reverb mode 1 would allow user to adjust the feedback level.
+* [Other] Registration notification dialog will appear only if plug-in user interface is open.
+
+Version 2.0.0 beta rc7 / 2020-10-04
+
+* [RC7] We are nearly ready to enter bug free VirusHC and official Release of version 2.
+* [Fixed] Resolved issue where patches loaded from librarian didn't sound the same on TI vs non-TI models.
+* [Fixed] Resolved issue where total recall didn't work as expected.
+* [Fixed] Resolved issue where multi transpose for TI didn't work as expected.
+* [Fixed] Resolved issue where plug-in interface was reset to default view even after recalling TI project.
+* [Fixed] Resolved issue where MIDI was sent back to hardware in a loop.
+* [Fixed] Small issues here and there.
+* [NOTE] Multi parameters to TI are sent when play button is pushed. This causes a one-time glitch and we will have it fixed in the next RC.
+
+Version 2.0.0 beta rc6 / 2020-08-18
+
+* [Fixed] Resolved issue where reverb & delay were not recalled in some cases (non-TI models).
+* [Fixed] Resolved issue where delay parameters caused a lot of stuttering to DAW while moving knobs.
+* [Fixed] Small issues here and there.
+
 Version 2.0.0 beta rc5 / 2020-08-15
 
 * [RC5] UI and LOG files are now located where they are expected to be.

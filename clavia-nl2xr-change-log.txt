@@ -1,3 +1,17 @@
+Version 2.2.0 / 2020-10-10
+
+* [New] Open Support Ticket Menu item added to Patch Librarian -> Bank Edit -> Other Helpful Things..
+* [New] Check for Updates Menu item added to Patch Librarian -> Bank Edit -> Other Helpful Things..
+* [New] DAW User Guides Menu item added to Patch Librarian -> Bank Edit -> Other Helpful Things..
+* [New] Plug-in will now say if license can not be validated and prompts to locate the license file. It does not matter if license has .key or .txt extension to it, both are supported.
+* [New] Import *.nl2 (NL2xR) formats directly from bank edit -> import menu to librarian.
+* [New] Converted files are now renamed with *.nl2 extension and original file is moved to Converted Banks folder.
+* [Fixed] Resolved issue where some patch banks were not visible in the librarian in some cases.
+* [Fixed] Resolved issue where selecting patch bank would crash the plug-in in some cases.
+* [Fixed] Resolved issue where control display would show information while it was not supposed to do so.
+* [Fixed] Resolved issue where plug-in scan could potentially hang.
+* [Fixed] Resolved issue where Register Plug-in dialog would not open from Patch Librarian -> Bank Edit -> Register Plug-in.
+
 Version 2.1.9 / 2020-02-04
 
 * [Other] Removed Auto-save MIDI I/O due to errors caused by the device initialization.
