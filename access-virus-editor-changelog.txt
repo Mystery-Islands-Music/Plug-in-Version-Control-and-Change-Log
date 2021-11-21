@@ -1,0 +1,20 @@
+Version 3.0.0 build 6889 / 2021-November-21
+
+** this release is available for macOS users only! **
+
+* [Other] macOS users: since v3, Metal supported graphics card is REQUIRED!
+
+* [New] User can now Initialize Bank from Patch Librarian -> Bank Edit Menu -> Other Helpful Things...
+* [New] UTIL button added next to Save UI Data button. This opens a new menu with options to:
+- Initialize Active Part
+- Initialize Active Multi
+- Initialize Arrangement
+- Copy Part Data
+- Paste Part Data
+- Load MIDI CC Map
+- Save MIDI CC Map
+- Download Update (if internet and update available).
+* [New] If update is available, recent changes are shown in a new window with download link.
+* [Fixed] Librarian right click menu "Paste" option is no longer available if clipboard is empty.
+* [Other] Librarian right click menu now has "Copy" option available for Upper list as well.
+* [Other] Drag and Drop works now from Lower to Upper list and within Upper list.
