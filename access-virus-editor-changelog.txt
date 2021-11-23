@@ -1,4 +1,4 @@
-Version 3.0.0 build 6891 / 2021-November-22
+Version 3.0.0 build 6891 / 2021-November-23
 
 * [New] Initialize Bank from Patch Librarian -> Bank Edit Menu -> Other Helpful Things...
 * [New] UTILITY button added next to Save UI Data button.
@@ -14,7 +14,7 @@ Version 3.0.0 build 6891 / 2021-November-22
 * [Fixed] Librarian right click menu "Paste" option is no longer available if clipboard
           is empty.
 * [Fixed] Resolved issue where DAW could crash in some cases if User Interface was closed.
-* [Fixed] Resolved issue where automation did not work if User Interface was closed.
+* [Fixed] Resolved issue where automation did not work as expected.
 * [Fixed] Tempo from host was not updated to plugin and hardware until User Interface was
           opened.
 * [Other] Librarian right click menu now has "Copy" option available for Upper list as
@@ -22,7 +22,7 @@ Version 3.0.0 build 6891 / 2021-November-22
 * [Other] Drag and Drop works now from Lower to Upper list and within Upper list.
 * [Other] Patch Librarian -> Bank Edit Menu -> Other Helpful Things... -> 
           Check for updates now opens a new view if update is available.
-* [Other] Clear MIDI button now removes all MIDI CC Mappings.
+* [Other] Clear MIDI button now opens a menu to Clear All or Active Parameter assignment.
 * [Other] If user attempts to set MIDI output before MIDI input, plugin/app display
           notifies user to set MIDI input first.
 * [Other] Updated Tips layer to reflect new changes in the User Interface.
