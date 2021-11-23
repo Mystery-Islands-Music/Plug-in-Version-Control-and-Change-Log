@@ -1,4 +1,4 @@
-Version 3.0.0 build 6891 / 2021-November-23
+Version 3.0.0 build 6891 / 2021-November-24
 
 * [New] Initialize Bank from Patch Librarian -> Bank Edit Menu -> Other Helpful Things...
 * [New] UTILITY button added next to Save UI Data button.
