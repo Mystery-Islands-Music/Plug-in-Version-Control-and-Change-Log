@@ -1,28 +1,20 @@
-Version 3.0.0 build 6891 / 2021-November-24
+Version 3.0.0 build 6895 / 2021-November-27
 
-* [New] Initialize Bank from Patch Librarian -> Bank Edit Menu -> Other Helpful Things...
-* [New] UTILITY button added next to Save UI Data button.
-    This opens a new menu with options to:
-      - Initialize Active Part, Multi or Arrangement
-      - Copy and Paste Data between parts.
-      - Load and Save MIDI CC Map files.
-      - Version Notifier:
-        (if internet and update are available, "Update Available" opens new window with
-        recent changes).
-* [New] MIDI In & Out Devices listed with "FROM:" and "TO:" prefixes.
-* [Fixed] MIDI In and MIDI Out Device names were not assigned properly in some cases.
-* [Fixed] Librarian right click menu "Paste" option is no longer available if clipboard
-          is empty.
-* [Fixed] Resolved issue where DAW could crash in some cases if User Interface was closed.
-* [Fixed] Resolved issue where automation did not work as expected.
-* [Fixed] Tempo from host was not updated to plugin and hardware until User Interface was
-          opened.
-* [Other] Librarian right click menu now has "Copy" option available for Upper list as
-          well.
-* [Other] Drag and Drop works now from Lower to Upper list and within Upper list.
-* [Other] Patch Librarian -> Bank Edit Menu -> Other Helpful Things... -> 
-          Check for updates now opens a new view if update is available.
-* [Other] Clear MIDI button now opens a menu to Clear All or Active Parameter assignment.
-* [Other] If user attempts to set MIDI output before MIDI input, plugin/app display
-          notifies user to set MIDI input first.
-* [Other] Updated Tips layer to reflect new changes in the User Interface.
+* [New] Extended tooltips. Once mouse is hover over the control, a popup will appear with 
+        explanation of the control function. Previously user could only see the control 
+        value and name in the plugin / app display.
+* [New] Completely rewrote portition of the code which handles the patch and multi 
+        renaming. No more waiting of data transfers after renaming.
+* [Fixed] Reverb Feedback value was not recorded properly when parsing patch data nor 
+          while sending data to hardware.
+* [Fixed] Resolved issue where multi fx settings were not updated accordingly when master 
+          fx part patch was changed.
+* [Fixed] Resolved issue where Oscillator 2 Local Detune was not working as expected.
+* [Fixed] Virus TI models total recall rate adjusted. Might be slower, but this ensures 
+          better data processing in hardware.
+* [Other] In order for data sending to succeed, you MUST follow these steps when loading 
+   new instance of Virus Editor:
+     1) Select your Virus model.
+     2) Select MIDI input device.
+     3) Select MIDI output device.
+     4) Click 'SYNC DATA FROM HW' button from the User Interface. Enjoy usage as normal!
