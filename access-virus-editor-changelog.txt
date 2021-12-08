@@ -1,19 +1,7 @@
-Version 3.0.0 build 6923 / 2021-December-05
+Version 3.0.0 build 6932 / 2021-December-08
 
-[new] Native Apple Silicon support for Standalone Application and Plugins *.
-[new] Apple Silicon forced us to change the data folder structure completely.
- You can find all plugin / application related files as follows;
-    (Patches): "/Library/Mystery Islands Music/Presets/Access Virus Editor/Patches/".
-    (CC Maps): "/Library/Mystery Islands Music/Presets/Access Virus Editor/CC Maps/".
-    (UI Data): "/Library/Mystery Islands Music/Presets/Access Virus Editor/UI Data/".
-    (License and LOG file): "/Library/Mystery Islands Music/Access Virus Editor/".
-[new] If plugin or application fails to load license, user can initiate license
- loading dialog from the top left corner of our plugin / application.
-[new] Plugin / Application window will be automatically resized if it will not fit to
- current display.
-[fixed] Update checker did not work as expected.
-[fixed] Standalone Application menu titles shown as they should.
-[fixed] Using "Menu 2" for Application / Plugins now has scrolling option if menu
- draw area exceeds the display area.
-
-* We are waiting for Pro Tools Native M1 support to arrive so we can include M1 AAX version.
+[new] Patch Librarian can now export "classic" banks to TC Electronic 
+    Virus|PowerCore compatible format.
+    - Patch Librarian -> Bank Edit Menu -> Save As ... -> Virus|Powercore.
+[fixed] Resolved issue where User Interface was downscaled even when there was room
+    to display it in full scale.
