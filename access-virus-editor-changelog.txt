@@ -1,7 +1,16 @@
-Version 3.0.0 build 6932 / 2021-December-08
+Version 3.0.0 build 6943 / 2021-December-11
 
-[new] Patch Librarian can now export "classic" banks to TC Electronic 
-    Virus|PowerCore compatible format.
-    - Patch Librarian -> Bank Edit Menu -> Save As ... -> Virus|Powercore.
-[fixed] Resolved issue where User Interface was downscaled even when there was room
-    to display it in full scale.
+* [New] When part is changed, plugin / application display will show the 
+      current value.
+* [Fixed] Resolved issue where part 1 button remained active at multimode mixer 
+      page when part was changed.
+* [Fixed] Resolved issue where save and load UI Data and CC Maps was pointing 
+      to wrong location.
+* [Fixed] Resolved issue where Logic Pro did not show the plugin User Interface 
+      on initialization.
+* [Fixed] Resolved issue where VST3 had only one MIDI input channel instead of 
+      16. 
+* [Improvement] Virus OS type specifier improvements. Now OS is tied to 
+      specific model selection. We expect user to have latest available OS 
+      installed in their Virus to use the plugin / application the way it is 
+      expected to work.
