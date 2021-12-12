@@ -1,16 +1,22 @@
-Version 3.0.0 build 6943 / 2021-December-11
+Version 3.0.0 build 6949 / 2021-December-13
 
-* [New] When part is changed, plugin / application display will show the 
-      current value.
-* [Fixed] Resolved issue where part 1 button remained active at multimode mixer 
-      page when part was changed.
-* [Fixed] Resolved issue where save and load UI Data and CC Maps was pointing 
-      to wrong location.
-* [Fixed] Resolved issue where Logic Pro did not show the plugin User Interface 
-      on initialization.
-* [Fixed] Resolved issue where VST3 had only one MIDI input channel instead of 
-      16. 
-* [Improvement] Virus OS type specifier improvements. Now OS is tied to 
-      specific model selection. We expect user to have latest available OS 
-      installed in their Virus to use the plugin / application the way it is 
-      expected to work.
+* [New] Warning dialog will appear if
+    a) user attempts to write data from librarian to hardware.
+    b) user attempts to connect midi output before midi input.
+    c) memory protect is enabled.
+* [New] Global LED settings added to FX / Settings #2 tab as well as Memory
+    Protect menu. LCD contrast on legacy models apply only when globals are 
+    sent to hardware.
+* [New] Virus TI models are now forced into multi mode when when data is 
+    recalled or when plugin is initialized.
+* [Fixed] Resolved issue where global -> midi clock on legacy models was not 
+    working as expected.
+* [Fixed] Resolved issue where global -> midi destination on legacy models was 
+    not working as expected.
+* [Fixed] Resolved issue where global input settings were not applied / 
+    recalled on legacy models.
+* [Fixed] Resolved issue where master tuning and keyboard aftertouch 
+    sensitivity controls did not display value as expected.
+* [Fixed] Resolved issue where plugin could potentially cause feedback loop.
+* [Fixed] Resolved issue where all settings were initialized if MIDI out port
+    was not present during recall.
