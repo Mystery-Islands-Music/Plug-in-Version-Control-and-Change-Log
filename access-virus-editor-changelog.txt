@@ -1,23 +1,20 @@
-Version 3.0.0 build 7016 / 2022-January-05
+Version 3.0.0 build 7018 / 2022-January-09
 
-* [Fixed] Resolved issue where 0xf8 and 0xfe were passed through even when
-    they were set to OFF. This should eliminate "connection error" issues all
-    together.
-* [Other] Improved data handling when setting MIDI input and output. Initial
-    commands are now sent to output port before checking if the device is
-    present.
-* [Other] External MIDI Sense is set to be ignored. Might add option to filter
-    midi sense and midi clock messages directly from advanced midi settings.
-* [Other] Extended logging system for development purposes. Send the plugin
-    log file from /Music/Mystery Islands Music/Access Virus Editor/ folder to
-    development@mysteryislands-music.com with steps how to reproduce the
-    issue. Thank you!
-
-Version 3.0.0 build 7001 / 2021-December-25
-
-* [New] First Windows release candidate.
-
-Version 3.0.0 build 6967 / 2021-December-17
-
-* [Fixed] Resolved issue where Delay FX mode was not working as expected when
-    model was Virus TI or TI Snow.
+* [New] Star sign is shown in the Main Tab next to "PATCH LIBRARIAN” if bank
+    has unsaved changes.
+* [New] If bank contains TI and classic patches, bank is converted to TI bank.
+    Classic models can still load these presets without TI functions.
+* [New] Check if MIDI ports are free to use. If port cannot be opened, warning
+    message will appear, instead of hard crash.
+* [Fixed] Resolved issue where importing banks did not work if bank was not
+    fully loaded with single patches. Now import works even if bank has one
+    patch in it.
+* [Fixed] Resolved issue where storing banks did not work as expect when bank
+    contained data from classic and TI models.
+* [Fixed] Resolved issue where writing data to current bank & patch
+    combination did not work as expected.
+* [Fixed] Resolved issue where DAW would crash when removing plugin from track
+    and then adding it back in again in some cases.
+* [Fixed] Oscillator Phase Init knob was not available when Unison Mode was
+    set to OFF.
+* [Fixed] Resolved macOS Installer error ...
