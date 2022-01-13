@@ -1,20 +1,18 @@
-Version 3.0.0 build 7018 / 2022-January-09
+Version 3.0.0 build 7020 / 2022-January-12
 
-* [New] Star sign is shown in the Main Tab next to "PATCH LIBRARIAN” if bank
-    has unsaved changes.
-* [New] If bank contains TI and classic patches, bank is converted to TI bank.
-    Classic models can still load these presets without TI functions.
-* [New] Check if MIDI ports are free to use. If port cannot be opened, warning
-    message will appear, instead of hard crash.
-* [Fixed] Resolved issue where importing banks did not work if bank was not
-    fully loaded with single patches. Now import works even if bank has one
-    patch in it.
-* [Fixed] Resolved issue where storing banks did not work as expect when bank
-    contained data from classic and TI models.
-* [Fixed] Resolved issue where writing data to current bank & patch
-    combination did not work as expected.
-* [Fixed] Resolved issue where DAW would crash when removing plugin from track
-    and then adding it back in again in some cases.
-* [Fixed] Oscillator Phase Init knob was not available when Unison Mode was
-    set to OFF.
-* [Fixed] Resolved macOS Installer error ...
+* [New] Less clicking when recalling a project: Main tab and Quick tab values
+    are stored within project.
+* [Fixed] When dragging and dropping patches between slots, name is now shown
+    in the drag box.
+* [Fixed] Shortcut in Windows startup menu fixed for Editor executable.
+* [Fixed] Patch Librarian “Save Part Data To Slot” button was not behaving as
+    expected when dropping patch from bottom list to top list.
+* [Fixed] Fixed macOS installer error further.
+* [Improvement] Selected Librarian Banks per part are now automatically
+    stored and recalled as expected.
+* [Improvement] If Application or Plugin is exiting while tasks are running,
+    tasks are terminated to quit faster.
+* [Other] Total Recalling projects prior to build 7020 might show some weird
+    behavior.
+* [Other] Removed deep debugging. No more clicks and crackles when using the
+    plugin.
