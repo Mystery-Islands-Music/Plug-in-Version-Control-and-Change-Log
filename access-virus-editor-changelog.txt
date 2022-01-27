@@ -1,18 +1,15 @@
-Version 3.0.0 build 7020 / 2022-January-12
+Version 3.0.0 build 7552 / 2022-January-27
 
-* [New] Less clicking when recalling a project: Main tab and Quick tab values
-    are stored within project.
-* [Fixed] When dragging and dropping patches between slots, name is now shown
-    in the drag box.
-* [Fixed] Shortcut in Windows startup menu fixed for Editor executable.
-* [Fixed] Patch Librarian “Save Part Data To Slot” button was not behaving as
-    expected when dropping patch from bottom list to top list.
-* [Fixed] Fixed macOS installer error further.
-* [Improvement] Selected Librarian Banks per part are now automatically
-    stored and recalled as expected.
-* [Improvement] If Application or Plugin is exiting while tasks are running,
-    tasks are terminated to quit faster.
-* [Other] Total Recalling projects prior to build 7020 might show some weird
-    behavior.
-* [Other] Removed deep debugging. No more clicks and crackles when using the
-    plugin.
+* [New] Native 64-bit AAX for Windows included in the installer.
+    (macOS AAX was out already).
+* [Fixed] Open Data Folder did not open proper location on Windows.
+* [Fixed] Patch Librarian bank menu items are now shown correctly if folder
+    has subfolders.
+* [Fixed] Bank Overwrite and Save As no longer removes file from Patches
+    folder.
+* [Fixed] Resolved issue where plugin / app would crash under certain
+    circumstances if lower bank selection was triggered.
+* [Improvement] Mod Matrix and LFO Destinations are now broken down to
+    groups and lists are alphabetically ordered.
+* [Improvement] Removed logging completely from Release build to avoid
+    clicks in audio engine.
