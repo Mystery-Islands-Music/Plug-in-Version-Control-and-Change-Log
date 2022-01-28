@@ -1,15 +1,7 @@
-Version 3.0.0 build 7552 / 2022-January-27
+Version 3.0.0 build 7554 / 2022-January-28
 
-* [New] Native 64-bit AAX for Windows included in the installer.
-    (macOS AAX was out already).
-* [Fixed] Open Data Folder did not open proper location on Windows.
-* [Fixed] Patch Librarian bank menu items are now shown correctly if folder
-    has subfolders.
-* [Fixed] Bank Overwrite and Save As no longer removes file from Patches
-    folder.
-* [Fixed] Resolved issue where plugin / app would crash under certain
-    circumstances if lower bank selection was triggered.
-* [Improvement] Mod Matrix and LFO Destinations are now broken down to
-    groups and lists are alphabetically ordered.
-* [Improvement] Removed logging completely from Release build to avoid
-    clicks in audio engine.
+* [New] Windows installer is now signed.
+* [Fixed] Resolved issue where macOS was not able to read Patches data nor
+    the license file.
+* [Improvement] On Screen Keyboard now responses to hardware and DAW note
+    messages.
