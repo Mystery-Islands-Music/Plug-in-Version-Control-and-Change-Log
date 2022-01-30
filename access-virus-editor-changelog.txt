@@ -1,7 +1,24 @@
-Version 3.0.0 build 7554 / 2022-January-28
+Version 3.0.0 build 7556 / 2022-January-30
 
-* [New] Windows installer is now signed.
-* [Fixed] Resolved issue where macOS was not able to read Patches data nor
-    the license file.
-* [Improvement] On Screen Keyboard now responses to hardware and DAW note
-    messages.
+* [New] Bottom bar has new option to "AutoSave" changes made in Patch
+    Librarian to upper bank. Use with caution.
+* [New] Randomizer Trigger with MIDI CC. User can now define which
+    incoming MIDI CC will trigger randomizer.
+    Setting adjustable in Advanced MIDI Settings tab. Only applies if MIDI
+    CC comes from DAW or Remote Input (standalone app).
+* [New] Randomizer Percentage. User can now define in percentage how much
+    Randomness takes place when triggered.
+    Setting adjustable in Advanced MIDI Settings tab.
+* [Fixed] Resolved issue where bank disappeared after "bank edit menu" ->
+    "overwrite bank".
+* [Fixed] Resolved issue where program up and down buttons did not work as
+    expected.
+* [Fixed] Resolved issue where Section Locks did not work as expected.
+* [Fixed] Section Locks now indicate ON and OFF status when toggled on or
+    off.
+* [Fixed] When changing Reverb Mode from Virus TI, Reverb Mode should now
+    reflect to proper value in the editor.
+* [Improvement] MIDI initialization commands are now sent to hardware if
+    MIDI output is connected and model is changed afterwards.
+* [Improvement] Download links now point to direct download page.
+    Remember to login for FULL version access
