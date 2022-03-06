@@ -1,24 +1,17 @@
-Version 3.0.0 build 7556 / 2022-January-30
+Version 3.0.0 build 8821 / 2022-March-06
 
-* [New] Bottom bar has new option to "AutoSave" changes made in Patch
-    Librarian to upper bank. Use with caution.
-* [New] Randomizer Trigger with MIDI CC. User can now define which
-    incoming MIDI CC will trigger randomizer.
-    Setting adjustable in Advanced MIDI Settings tab. Only applies if MIDI
-    CC comes from DAW or Remote Input (standalone app).
-* [New] Randomizer Percentage. User can now define in percentage how much
-    Randomness takes place when triggered.
-    Setting adjustable in Advanced MIDI Settings tab.
-* [Fixed] Resolved issue where bank disappeared after "bank edit menu" ->
-    "overwrite bank".
-* [Fixed] Resolved issue where program up and down buttons did not work as
-    expected.
-* [Fixed] Resolved issue where Section Locks did not work as expected.
-* [Fixed] Section Locks now indicate ON and OFF status when toggled on or
-    off.
-* [Fixed] When changing Reverb Mode from Virus TI, Reverb Mode should now
-    reflect to proper value in the editor.
-* [Improvement] MIDI initialization commands are now sent to hardware if
-    MIDI output is connected and model is changed afterwards.
-* [Improvement] Download links now point to direct download page.
-    Remember to login for FULL version access
+* [Other] This version might be incompatible with previous version
+    save-state.
+
+* [New] Plugin now has multichannel MIDI input channels available in 
+    Pro Tools.
+* [New] Effects are no longer available in the plugin / app when they are
+    set to disabled (delay, eq, reverb and arp).
+* [New] User Interface LEDs can be disabled from the bottom bar. This
+    function replaced "menu 2" function.
+* [Fixed] Channel routing inside the plugin and app should work as
+    expected, even with remote keyboards.
+* [Fixed] Resolved issue where some Mod Matrix destinations didn't work
+    as expected.
+* [Improvement] Reduced plugin CPU load.
+* [Improvement] Graphics improvements.
