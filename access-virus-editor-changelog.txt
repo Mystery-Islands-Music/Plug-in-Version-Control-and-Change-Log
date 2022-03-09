@@ -1,17 +1,8 @@
-Version 3.0.0 build 8821 / 2022-March-06
+Version 3.0.0 build 8823 / 2022-March-09
 
-* [Other] This version might be incompatible with previous version
-    save-state.
-
-* [New] Plugin now has multichannel MIDI input channels available in 
-    Pro Tools.
-* [New] Effects are no longer available in the plugin / app when they are
-    set to disabled (delay, eq, reverb and arp).
-* [New] User Interface LEDs can be disabled from the bottom bar. This
-    function replaced "menu 2" function.
-* [Fixed] Channel routing inside the plugin and app should work as
-    expected, even with remote keyboards.
-* [Fixed] Resolved issue where some Mod Matrix destinations didn't work
-    as expected.
-* [Improvement] Reduced plugin CPU load.
-* [Improvement] Graphics improvements.
+[fixed] Resolved issue where plugin would crash when clicking
+    "Push Data To HW" in some cases.
+[fixed] Resolved issue where plugin would crash when parameter was
+    changed and LED tracking was set for outgoing MIDI data.
+[fixed] Resolved issue where Bank Edit Menu button was not functioning
+    under certain circumstances.
