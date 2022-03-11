@@ -1,8 +1,17 @@
-Version 3.0.0 build 8823 / 2022-March-09
+Version 3.0.0 build 8825 / 2022-March-10
 
-[fixed] Resolved issue where plugin would crash when clicking
-    "Push Data To HW" in some cases.
-[fixed] Resolved issue where plugin would crash when parameter was
-    changed and LED tracking was set for outgoing MIDI data.
-[fixed] Resolved issue where Bank Edit Menu button was not functioning
-    under certain circumstances.
+[new] Full version now includes USB driver for Virus TI users.
+    Users with macOS 10.15 and beyond can now connect to
+    "Virus TI USB Plugin I/O" with Virus TI.
+    (yes, Big Sur and Monterey users as well).
+    Audio has to be routed from Virus to sound card or console,
+    but we are investigating...
+    
+    Addendum:
+    USB seems to be very slow, so if you have MIDI device,
+    use that instead!
+
+[fixed] Resolved issue where MIDI data was not properly handled causing
+    continuous Device ID checks.
+[fixed] Resolved issue where bank edit indicator did not display when
+    requesting data from hardware to librarian.
